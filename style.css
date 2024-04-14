@@ -1,3 +1,10 @@
+:root{
+    --color: crimson;
+    --fuente-titulo: Verdana, Geneva, Tahoma, sans-serif ;
+    --fuente-texto:'Montserrat' ;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -50,3 +57,229 @@ a{
 }
 
 /* fin header  */
+
+
+
+
+a{
+    text-decoration: none;
+
+}
+
+.titulo-color p{
+    color: var(--color) ;
+    font-family: var(--fuente-texto);
+    font-weight: 700;
+    border-left: var(--color) 15px solid;
+    padding: 12px;
+
+}
+#section-categoria{
+    margin: 100px;
+
+}
+.titulo-h2{
+    color: black;
+    font-size: 36px;
+    font-family: var(--fuente-titulo);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.cont-categorias{
+    display: flex;
+    justify-content: space-between;
+}
+.categoria{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: gray 1px solid;
+    height: 150px;
+    width: 170px;
+    color:black;
+   
+
+
+}
+
+.categoria img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+
+
+}
+
+
+.categoria p{
+    
+    font-family: var(--fuente-texto);
+    font-weight: 500;
+    font-size: 16px;
+
+
+
+}
+
+.categoria:hover{
+    background-color: var(--color) ;
+    color: white;
+    transition: 0.4s;
+   
+}
+
+.categoria:hover img{
+    filter: invert(100%) sepia(94%) saturate(26%) hue-rotate(263deg) brightness(107%) contrast(104%);
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+#section-novedades{
+    margin: 100px;
+}
+
+
+.cont-novedades{
+   
+    height: 600px;
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+    "area1 area1 area2 area2"
+    "area1 area1 area3 area4"
+
+}
+
+.item1{
+    background-color: black;
+    background-image: url(./img/novedades/ps5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    grid-area: area1;
+
+}
+
+.item2{
+    background-color: black;
+    background-image: url(./img/novedades/samsung.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    grid-area: area2;
+}
+.item3{
+    background-color: black;
+    background-image: url(./img/novedades/tablet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    grid-area: area3;
+}
+.item4{
+    background-color:  black;
+    background-image: url(img/novedades/auricular.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    grid-area: area4;
+}
+
+
+.texto-novedad{
+    color: white;
+    width: 70%;
+    margin: 30px;
+    font-family: var(--fuente-texto);
+ 
+
+}
+
+
+.texto-novedad p{
+
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.texto-novedad .titulo-novedad{
+    font-size: 24px;
+    font-family: var(--fuente-titulo);
+}
+
+.texto-novedad a{
+    border-bottom: white 1px solid;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-servicios{
+    margin: 100px;
+}
+.cont-servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.servicio{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-titulo);
+    font-size: 14px;
+}
+.servicio img{
+    width: 30%;
+    margin-bottom: 20px ;
+   
+
+}   
+.titulo-servicio{
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
