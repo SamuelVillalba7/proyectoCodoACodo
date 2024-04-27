@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+       <header>
 
         <div class="header-box1">
             <div class="logo">
@@ -33,9 +34,111 @@
                 
             </ul>
         </div>
-    </header>
+    </header> 
 
-    <main>
+    <main id="main-home">
+
+
+      <section id="section-mejores-productos">
+
+        <div class="titulo-color">
+            <p>Este mes</p>
+        </div>
+        <h2 class="titulo-h2">Productos mas buscados</h2> 
+
+        <article class="items-relacionados">
+           
+            <section class="items-relacionados__items">
+              <div class="items__carta">
+                <div class="carta__top">
+                  <p class="carta__top-descuento">-40%</p>
+                  <span class="carta__top-botones">
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+                </div>
+                <img
+                  src="./img/productos/joystick_relacionado1.webp"
+                  alt=""
+                  class="carta__img-producto"
+                />
+                <div class="carta__carrito hidden">
+                  <p>Agregar al carrito</p>
+                </div>
+                <h3>Joystick inalámbrico Redragon Harrow</h3>
+                <p class="carta__precio">$120 <span>$160</span></p>
+              </div>
+  
+              <div class="items__carta">
+                <div class="carta__top">
+                  <p class="carta__top-descuento">-40%</p>
+                  <span class="carta__top-botones">
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+                </div>
+                <img
+                  src="./img/productos/joystick_relacionado2.webp"
+                  alt=""
+                  class="carta__img-producto"
+                />
+                <h3>Joystick Redragon Saturn G807</h3>
+                <p class="carta__precio">$120 <span>$160</span></p>
+              </div>
+  
+              <div class="items__carta">
+                <div class="carta__top">
+                  <p class="carta__top-descuento">-40%</p>
+                  <span class="carta__top-botones">
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+                </div>
+                <img
+                  src="./img/productos/joystick_relacionado3.webp"
+                  alt=""
+                  class="carta__img-producto"
+                />
+                <h3>Joystick Microsoft Xbox</h3>
+                <p class="carta__precio">$120 <span>$160</span></p>
+              </div>
+  
+              <div class="items__carta">
+                <div class="carta__top">
+                  <p class="carta__top-descuento">-40%</p>
+                  <span class="carta__top-botones">
+                    <i class="fa-regular fa-eye"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </span>
+                </div>
+                <img
+                  src="./img/productos/joystick_relacionado4.webp"
+                  alt=""
+                  class="carta__img-producto"
+                />
+                <h3>Joystick inalámbrico Dehuka</h3>
+                <p class="carta__precio">$120 <span>$160</span></p>
+              </div>
+
+            </section>
+
+
+            <div class="boton-home">
+              <button type="submit" class="botones__compra">Mira Mas Productos</button>
+            
+            </div>
+            
+          </article>
+  
+  
+          
+  
+    </section>
+
+
+
+
+
         
         <section id="section-categoria">
 
@@ -47,50 +150,343 @@
 
             <div class="cont-categorias">
                 <a href="">
-                    <div class="categoria">
-                        <img src="./img/categorias/celular.svg" alt="">
-                        <p>celulares</p>
-                     </div>
+                    <div class="categoria-grid-1">
+                        <div class="categoria">
+                            <img src="./img/categorias/celular.svg" alt="">
+                            <p>celulares</p>
+                        </div>
+                    </div>
                 </a>
                 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/computadora.svg" alt="">
-                    <p>computadoras</p>
-                </div>
+                    <div class="categoria-grid-2">
+                        <div class="categoria">
+                             <img src="./img/categorias/computadora.svg" alt="">
+                             <p>computadoras</p>
+                        </div>
+                    </div>
                </a>
 
                 <a href="">
-                <div class="categoria">
-                   <img src="./img/categorias/smartwatch.svg" alt="">
-                    <p>smartwatch</p>
-                </div>
+                    <div class="categoria-grid-3">
+                        <div class="categoria">
+                            <img src="./img/categorias/smartwatch.svg" alt="">
+                            <p>smartwatch</p>
+                        </div>
+                    </div>
                 </a>
 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/camara.svg" alt="">
-                    <p>camaras</p>
-                </div>
+                    <div class="categoria-grid-4">
+                        <div class="categoria">
+                            <img src="./img/categorias/camara.svg" alt="">
+                            <p>camaras</p>
+                        </div>
+                    </div>
                  </a>
     
                  <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/auricular.svg" alt="">
-                    <p>auriculares</p>
-                </div>
+                    <div class="categoria-grid-5">
+                        <div class="categoria">
+                            <img src="./img/categorias/auricular.svg" alt="">
+                            <p>auriculares</p>
+                        </div>
+                    </div>
                 </a>
                 
                 <a href="">
-                <div class="categoria">
-                    <img src="./img/categorias/consola.svg" alt="">
-                    <p>consolas</p>
-                </div>
+                    <div class="categoria-grid-6">
+                        <div class="categoria">
+                            <img src="./img/categorias/consola.svg" alt="">
+                            <p>consolas</p>
+                        </div>
+                    </div>
                 </a>
 
             </div>
 
 
+        </section>
+
+
+
+
+        <section id="section-mejores-productos">
+
+            <div class="titulo-color">
+                <p>Este mes</p>
+            </div>
+
+
+            <div class="cont-titulo">
+                <div>
+                    <h2 class="titulo-h2">Productos mas buscados</h2> 
+                </div>
+                <div>
+                    <button type="submit" class="botones__compra">Mas Productos</button>
+                </div>
+            </div>
+           
+
+            <article class="items-relacionados">
+               
+                <section class="items-relacionados__items">
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado1.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <div class="carta__carrito hidden">
+                      <p>Agregar al carrito</p>
+                    </div>
+                    <h3>Joystick inalámbrico Redragon Harrow</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado2.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Redragon Saturn G807</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado3.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Microsoft Xbox</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado4.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick inalámbrico Dehuka</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+
+                </section>
+
+              </article>
+      
+      
+              
+      
+        </section>
+
+
+        <section id="img-home">
+
+            <img src="./img/productos/Frame 600.png" alt="">
+            
+        </section>
+
+
+
+        <section id="section-mejores-productos">
+
+            <div class="titulo-color">
+                <p>Nuestros productos</p>
+            </div>
+            <h2 class="titulo-h2">Explora nuestros productos</h2> 
+
+            <article class="items-relacionados">
+               
+                <section class="items-relacionados__items">
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado1.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <div class="carta__carrito hidden">
+                      <p>Agregar al carrito</p>
+                    </div>
+                    <h3>Joystick inalámbrico Redragon Harrow</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado2.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Redragon Saturn G807</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado3.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Microsoft Xbox</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado4.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick inalámbrico Dehuka</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+                </section>
+                
+              </article>
+              <article class="items-relacionados">
+               
+                <section class="items-relacionados__items">
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado1.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <div class="carta__carrito hidden">
+                      <p>Agregar al carrito</p>
+                    </div>
+                    <h3>Joystick inalámbrico Redragon Harrow</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado2.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Redragon Saturn G807</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado3.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick Microsoft Xbox</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+      
+                  <div class="items__carta">
+                    <div class="carta__top">
+                      <p class="carta__top-descuento">-40%</p>
+                      <span class="carta__top-botones">
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-heart"></i>
+                      </span>
+                    </div>
+                    <img
+                      src="./img/productos/joystick_relacionado4.webp"
+                      alt=""
+                      class="carta__img-producto"
+                    />
+                    <h3>Joystick inalámbrico Dehuka</h3>
+                    <p class="carta__precio">$120 <span>$160</span></p>
+                  </div>
+                </section>
+
+                <div class="boton-home">
+                  <button type="submit" class="botones__compra">Mira Mas Productos</button>
+                
+                </div>
+              </article>
+      
+      
+              
+      
         </section>
 
 
@@ -146,7 +542,7 @@
                 <div class="servicio">
                     <img src="./img/servicios/Services.svg" alt=""/>
                     <p class="titulo-servicio">ENTREGA GRATUITA Y RÁPIDA</p>
-                    <p>Para los pedidos superiores a $140</p>
+                    <p>Solo pedidos superiores a $140</p>
                 </div>
 
                 <div class="servicio">
@@ -170,11 +566,102 @@
     </main>
 
 
+     <footer>
+        <div class="footer-container">
+            <div class="foo-section">
+                <div class="foo-brand" >
+                    <span class="foo-name-brand">PHLOX</span>
+                </div>
+                <div>
+                    <a href="" class="foo-subtitle">About</a>
+                </div>
+                <div>
+                    <label for="mail" class="foo-subtitle">Newsletter</label>
+                    <div class="subscribe-container">
+                        <input type="email" name="mail" id="mail" value="default@example.com">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Contact Us</span>
+                </div>
+                <div class="foo-contact foo-subtitle">
+                    <span>Street 0000,City</span>
+                    <span>CP 0000, Country</span>
+                    <span>phlox@mail.com</span>
+                    <span>9+54 000 0000000 </span>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Account</span>
+                </div>
+                <div class="foo-subtitle">
+                    <a href="">My Account</a>
+                    <a href="">Login/Register</a>
+                    <a href="">Cart</a>
+                    <a href="">Whishlist</a>
+                    <a href="">Shop</a>
+                </div>
+                </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Quick Link</span>
+                </div>
+                <div class="foo-subtitle">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms Of Use</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="foo-section">
+                <div class="foo-title">
+                    <span>Download App</span>
+                </div>
+                <div id="foo-comments">
+                    <span>Save $3 with App New User Only</span>
+                </div>
+                <div class="foo-platform-digital">
+                    <div>
+                        <a href="">
+                            <img src="./Assets/Img/img-QR-Code.png" alt="QR Code">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="./Assets/Img/img-Google-Play.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./Assets/Img/img-App-Store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="foo-social-media">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="foo-copyright">
+            <span>&copy; Copyright 2024. All right reserved</span>
+        </div>
+
+    </footer> 
 
 
-
-    <footer>
-
-    </footer>
+   
 </body>
 </html>
