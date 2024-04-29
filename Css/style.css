@@ -164,7 +164,7 @@ a{
 
 .item1{
     background-color: black;
-    background-image: url(./img/novedades/ps5.png);
+    background-image: url(../Assets/Img/novedades/ps5.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -178,7 +178,7 @@ a{
 
 .item2{
     background-color: black;
-    background-image: url(./img/novedades/samsung.png);
+    background-image: url(../Assets/Img/novedades/samsung.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
@@ -190,7 +190,7 @@ a{
 }
 .item3{
     background-color: black;
-    background-image: url(./img/novedades/tablet.png);
+    background-image: url(../Assets/Img/novedades/tablet.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -200,7 +200,7 @@ a{
 }
 .item4{
     background-color:  black;
-    background-image: url(img/novedades/auricular.png);
+    background-image: url(../Assets/Img/novedades/auricular.png);
     background-repeat: no-repeat;
     background-size: contain;
    
