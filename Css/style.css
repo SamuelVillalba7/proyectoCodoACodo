@@ -152,8 +152,11 @@ flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
-    margin: 2.47rem 1rem 8.75rem 1rem;
-    padding: 0;
+    margin: 2.47rem 1rem 8.75rem 0;
+    padding: 0 0 0 1rem;
+}
+.row-icon{
+margin-left:8vw;
 }
 .menu-section-divider{
     width: 0.03rem;
@@ -161,6 +164,7 @@ flex-flow: row wrap;
     margin: 2.47rem 2.78rem 4.37rem 1rem;
     opacity: 0.3;
     background-color: #000;
+    border: 1px solid violet;
 }
 
 .menu-section-img{
