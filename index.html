@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--CSS-->
     <link rel="stylesheet" href="./Css/style.css">
+
+  <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-       <header>
+      <header>
+        <nav class="nav-container">
+          <div class="menu-mobile">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav-menu">
+              <div class="nav-logo">
+                  <span>Exclusive</span>
+              </div>
+              <div class="nav-section">
+                  <a href="#">Home</a>
+                  <a href="#">Contact</a>
+                  <a href="#">About</a>
+                  <a href="#">Sign Up</a>
+              </div>
+          </div>
+          <div class="nav-search">
+              <div class="nav-input">
+                  <input type="search" name="" id="" placeholder="Buscar...">
+              </div>
+              <div class="nav-icons">
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                  <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </div>
+          </div>
+        </nav>
+      </header> 
 
-        <div class="header-box1">
-            <div class="logo">
-                <img src="" alt=""/>
-                <h2 class="nombre-empresa">PHLOX</h2>
+      <main id="main-home">
+
+<!-- Meli----Seccion de menú acordeon -->   
+        <section class="menu-section-container">
+          <div class="menu-section-accordeon"> 
+            <div>
+              <span>Celulares</span>
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
-            <nav>
-                <a href="">inicio</a>
-                <a href="">tienda</a>
-                <a href="">blog</a>
-                <a href="">contacto</a>
-            </nav>
-        </div>      
-       
-        <div class="header-box2">
-            <ul>
-                <li>login</li>
-                <li><img src="img/search.svg" alt=""/></li>
-                <li><img src="img/bag.svg" alt=""/></li>
-                
-            </ul>
-        </div>
-    </header> 
-
-    <main id="main-home">
-
+            <div>
+              <span>Computadoras</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>SmartWatch</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>Cámaras</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>Auriculares</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <span>Consolas</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div class="menu-section-divider"></div>
+          <div class="menu-section-img">
+            <img src="./Assets/Img/principal main/imageHeader.png" alt="Imagen de cabecera">
+          </div>
+        </section>
+<!-- ------------------------------------- -->
 
       <section id="section-mejores-productos">
 
@@ -565,103 +610,99 @@
 
     </main>
 
+    <footer>
+      <div class="footer-container">
+          <div class="foo-section">
+              <div class="foo-brand" >
+                  <span class="foo-name-brand">Exclusive</span>
+              </div>
+              <div>
+                  <a href="" class="foo-subtitle">Nosotros</a>
+              </div>
+              <div>
+                  <label for="mail" class="foo-subtitle">Newsletter</label>
+                  <div class="subscribe-container">
+                      <input type="email" name="mail" id="mail" value="default@example.com">
+                      <button type="submit">Subscribete</button>
+                  </div>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Contáctanos</span>
+              </div>
+              <div class="foo-contact foo-subtitle">
+                  <span>Calle 0000,Ciudad</span>
+                  <span>CP 0000, Pais</span>
+                  <span>exclusive@mail.com</span>
+                  <span>9+54 000 0000000 </span>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Cuenta</span>
+              </div>
+              <div class="foo-subtitle">
+                  <a href="">Mi cuenta</a>
+                  <a href="">Logueate/Registrate</a>
+                  <a href="">Carrito</a>
+                  <a href="">Lista de deseos</a>
+                  <a href="">Shop</a>
+              </div>
+              </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Legales</span>
+              </div>
+              <div class="foo-subtitle">
+                  <a href="">Políticas Privadas</a>
+                  <a href="">Términos de Uso</a>
+                  <a href="">FAQ</a>
+                  <a href="">Contacto</a>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Download App</span>
+              </div>
+              <div id="foo-comments">
+                  <span>Ahórrate $3000 con la nueva App</span>
+              </div>
+              <div class="foo-platform-digital">
+                  <div>
+                      <a href="">
+                          <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code">
+                      </a>
+                  </div>
+                  <div>
+                      <a href="">
+                          <img src="./Assets/Img/footer/img-Google-Play.png" alt="">
+                      </a>
+                      <a href="">
+                          <img src="./Assets/Img/footer/img-App-Store.png" alt="">
+                      </a>
+                  </div>
+              </div>
+              <div class="foo-social-media">
+                  <a href="">
+                      <i class="fa-brands fa-facebook-f fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-instagram fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="foo-copyright">
+          <span>&copy; Copyright 2024. All right reserved</span>
+      </div>
+    </footer>
 
-     <footer>
-        <div class="footer-container">
-            <div class="foo-section">
-                <div class="foo-brand" >
-                    <span class="foo-name-brand">PHLOX</span>
-                </div>
-                <div>
-                    <a href="" class="foo-subtitle">About</a>
-                </div>
-                <div>
-                    <label for="mail" class="foo-subtitle">Newsletter</label>
-                    <div class="subscribe-container">
-                        <input type="email" name="mail" id="mail" value="default@example.com">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Contact Us</span>
-                </div>
-                <div class="foo-contact foo-subtitle">
-                    <span>Street 0000,City</span>
-                    <span>CP 0000, Country</span>
-                    <span>phlox@mail.com</span>
-                    <span>9+54 000 0000000 </span>
-                </div>
-            </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Account</span>
-                </div>
-                <div class="foo-subtitle">
-                    <a href="">My Account</a>
-                    <a href="">Login/Register</a>
-                    <a href="">Cart</a>
-                    <a href="">Whishlist</a>
-                    <a href="">Shop</a>
-                </div>
-                </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Quick Link</span>
-                </div>
-                <div class="foo-subtitle">
-                    <a href="">Privacy Policy</a>
-                    <a href="">Terms Of Use</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact</a>
-                </div>
-            </div>
-            <div class="foo-section">
-                <div class="foo-title">
-                    <span>Download App</span>
-                </div>
-                <div id="foo-comments">
-                    <span>Save $3 with App New User Only</span>
-                </div>
-                <div class="foo-platform-digital">
-                    <div>
-                        <a href="">
-                            <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="./Assets/Img/footer/img-Google-Play.png" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./Assets/Img/footer/img-App-Store.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="foo-social-media">
-                    <a href="">
-                        <i class="fa-brands fa-facebook-f fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram fa-xl"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="foo-copyright">
-            <span>&copy; Copyright 2024. All right reserved</span>
-        </div>
-
-    </footer> 
-
-
-   
 </body>
 </html>
