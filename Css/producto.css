@@ -1,0 +1,465 @@
+:root {
+  --fuente-texto: "Montserrat";
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 1500px;
+  font-family: var(--fuente-texto);
+  background-color: rgb(237, 237, 237);
+
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  & p {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+main {
+  height: 100%;
+}
+
+article {
+  width: 100%;
+  margin: auto;
+}
+
+.main-container {
+  height: 95%;
+  width: 100%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 15px;
+  margin: 75px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ruta-producto {
+  color: gray;
+  word-spacing: 10px;
+  margin-bottom: 80px;
+
+  & span {
+    color: black;
+    font-weight: bold;
+    word-spacing: 2px;
+  }
+}
+
+.producto {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+.producto__imagenes {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+}
+
+.imagenes__columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+
+  & img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    &:hover {
+      border: 2.5px solid blue;
+    }
+  }
+}
+
+.imagenes__seleccionada {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+
+  & img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.producto__informacion {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.descripcion__reseña {
+  display: flex;
+  margin-bottom: 15px;
+
+  & span {
+    margin-left: 3px;
+  }
+
+  & p {
+    color: grey;
+    padding-left: 15px;
+
+    & span:nth-child(2) {
+      color: lightgreen;
+    }
+  }
+}
+
+.descripcion__precio {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.descripcion__resumen {
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.informacion__seleccion {
+  margin-top: 25px;
+}
+
+.seleccion__colores {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+
+  & p {
+    display: inline-block;
+  }
+
+  & span {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  & span:nth-of-type(1) {
+    background-color: red;
+  }
+
+  & span:nth-of-type(2) {
+    background-color: blue;
+  }
+}
+
+.seleccion__botones {
+  height: 40px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.botones__cantidad {
+  display: flex;
+
+  & button {
+    width: 25%;
+    font-size: 1.5rem;
+    padding: 0;
+    border: 1px solid gray;
+  }
+
+  & button:nth-of-type(1) {
+    background-color: inherit;
+    border-radius: 3px 0 0 3px;
+    margin-right: -2px;
+  }
+
+  & button:nth-of-type(2) {
+    border-radius: 0 3px 3px 0;
+    margin-left: -2px;
+    color: white;
+    background-color: red;
+  }
+
+  & input {
+    width: 50%;
+  }
+}
+
+.botones__compra {
+  width: 160px;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+
+.botones__favorito {
+  width: 40px;
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+
+  & i {
+    font-size: 1.3rem;
+  }
+}
+
+.informacion__envio {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid gray;
+  border-radius: 3px;
+
+  & div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & div:nth-of-type(1) {
+    border-bottom: 1px solid gray;
+  }
+
+  & i {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+
+  & ul {
+    list-style: none;
+    line-height: 30px;
+    padding-left: 25px;
+
+    & li:nth-of-type(1) {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.items-relacionados {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.items-relacionados__titulo {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  & span {
+    height: 100%;
+    width: 20px;
+    background-color: red;
+  }
+
+  & p {
+    padding-left: 10px;
+  }
+}
+
+.items-relacionados__items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & h3 {
+    margin-bottom: 15px;
+  }
+}
+
+.items__carta {
+  width: 20%;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carta__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px 0 10px;
+}
+
+.carta__top-descuento {
+  height: 25px;
+  width: 55px;
+  color: white;
+  text-align: center;
+  padding: 2px 5px 5px 5px;
+  background-color: red;
+}
+
+.carta__top-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.carta__img-producto {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carta__precio {
+  color: red;
+
+  & span {
+    color: black;
+    margin-left: 15px;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+.hidden {
+  display: none;
+}
+
+.carta__carrito {
+  height: 35px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 0 0 4px 4px;
+}
+
+@media only screen and (width <= 767px) {
+  html {
+    min-width: 100vw;
+  }
+
+  body {
+    min-height: 1630px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .main-container {
+    height: 100%;
+    width: 100vw;
+    max-width: none;
+    margin: auto 0;
+    padding: 20px;
+  }
+
+  .ruta-producto {
+    margin-bottom: 60px;
+  }
+
+  .producto {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 60px auto;
+    gap: 35px;
+  }
+
+  .producto__imagenes {
+    width: 100%;
+  }
+
+  .imagenes__columna {
+    & img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .producto__informacion {
+    width: 100%;
+  }
+
+  .items-relacionados {
+    height: 450px;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 30px;
+
+    & h3 {
+      font-size: 0.8rem;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  .items-relacionados__items {
+    gap: 5px;
+  }
+
+  .items__carta {
+    width: 25%;
+    justify-content: space-between;
+  }
+
+  .carta__top {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .carta__top-descuento {
+    width: auto;
+    max-width: 55px;
+    padding: 4px 2px 2px 4px;
+    font-size: 0.8em;
+  }
+
+  .carta__top-botones {
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+
+  .carta__img-producto {
+    height: 130px;
+  }
+
+  .carta__precio {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (width < 600px) {
+  .imagenes__columna {
+    & img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
