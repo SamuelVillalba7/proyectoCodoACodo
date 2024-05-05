@@ -59,6 +59,13 @@ header{
     text-align: left;
     color: #ebf6ff;
 }
+
+.menu-mobile{
+    color: #ebf6ff;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
 .nav-section{
     width: 40vw;
     height: 1.5rem;
@@ -67,7 +74,7 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 a{
     text-decoration: none;
@@ -128,9 +135,21 @@ left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1.5rem 0;
+    padding: 0 1.6rem 0;
     color: #ebf6ff;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+.cart-icon{
+    color: #ebf6ff;
+    background-image: url(../Assets/Img/navbar/shopping-cart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    padding: 0 1rem 0;
+}
+
+.register-icon{
+    display: none;
 }
 
 /* fin header  */
