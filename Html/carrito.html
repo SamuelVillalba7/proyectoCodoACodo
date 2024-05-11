@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/normalize.css" />
+    <link rel="stylesheet" href="/Css/carrito.css" />
+    <link rel="stylesheet" href="/Css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="menu-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-logo">
+            <span>Exclusive</span>
+          </div>
+          <div class="nav-section">
+            <a href="/index.html">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+        <div class="nav-search">
+          <div class="nav-input">
+            <input type="search" name="" id="" placeholder="Buscar..." />
+          </div>
+          <div class="nav-icons">
+            <i class="fa-regular fa-heart fa-xl"></i>
+            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="ruta-producto">
+          <p>Inicio / Carrito</p>
+        </div>
+
+        <article class="carrito">
+          <section class="carrito__header">
+            <p>Producto</p>
+            <p>Precio</p>
+            <p>Cantidad</p>
+            <p>Subtotal</p>
+          </section>
+
+          <section class="carrito__producto">
+            <span>
+              <img
+                src="/Assets/Img/productos/joystick1.webp"
+                alt="Imagen del producto"
+              />
+              <p>Joystick PS5</p>
+            </span>
+            <span><p>$100.000</p></span>
+            <span><input type="number" name="" id=""/></span>
+            <span><p>$100.000</p></span></span>
+          </section>
+
+          <section class="carrito__producto">
+            <span>
+              <img
+                src="/Assets/Img/productos/joystick1.webp"
+                alt="Imagen del producto"
+              />
+              <p>Joystick PS5</p>
+            </span>
+            <span><p>$100.000</p></span>
+            <span><input type="number" name="" id=""/></span>
+            <span><p>$100.000</p></span></span>
+          </section>
+
+          <section class="carrito__botones">
+            <button class="boton-basico boton-blanco"><a href="/index.html">Volver al inicio</a></button>
+            <button class="boton-basico boton-blanco" type="submit">Actualizar carrito</button>
+          </section>
+
+          <section class="carrito__tail">
+            <div class="tail__cupones">
+              <input type="text" placeholder="Codigo del cupon" />
+              <button class="boton-basico boton-rojo">Aplicar cupon</button>
+            </div>
+
+            <div class="tail__resumen">
+              <h2>Carrito total</h2>
+              <div>
+                <p>Subtotal:</p>
+                <p>$100.000</p>
+              </div>
+              <hr />
+
+              <div>
+                <p>Envio:</p>
+                <p>Gratis</p>
+              </div>
+              <hr />
+
+              <div>
+                <p>Total:</p>
+                <p>$100.000</p>
+              </div>
+
+              <button class="boton-basico boton-rojo">Continuar a la verificación</button>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="foo-section">
+          <div class="foo-brand">
+            <span class="foo-name-brand">Exclusive</span>
+          </div>
+          <div>
+            <a href="" class="foo-subtitle">Nosotros</a>
+          </div>
+          <div>
+            <label for="mail" class="foo-subtitle">Newsletter</label>
+            <div class="subscribe-container">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                value="default@example.com"
+              />
+              <button type="submit">Subscribete</button>
+            </div>
+          </div>
+        </div>
+        <div class="foo-section">
+          <div class="foo-title">
+            <span>Contáctanos</span>
+          </div>
+          <div class="foo-contact foo-subtitle">
+            <span>Calle 0000,Ciudad</span>
+            <span>CP 0000, Pais</span>
+            <span>exclusive@mail.com</span>
+            <span>9+54 000 0000000 </span>
+          </div>
+        </div>
+        <div class="foo-section">
+          <div class="foo-title">
+            <span>Cuenta</span>
+          </div>
+          <div class="foo-subtitle">
+            <a href="">Mi cuenta</a>
+            <a href="">Logueate/Registrate</a>
+            <a href="">Carrito</a>
+            <a href="">Lista de deseos</a>
+            <a href="">Shop</a>
+          </div>
+        </div>
+        <div class="foo-section">
+          <div class="foo-title">
+            <span>Legales</span>
+          </div>
+          <div class="foo-subtitle">
+            <a href="">Políticas Privadas</a>
+            <a href="">Términos de Uso</a>
+            <a href="">FAQ</a>
+            <a href="">Contacto</a>
+          </div>
+        </div>
+        <div class="foo-section">
+          <div class="foo-title">
+            <span>Download App</span>
+          </div>
+          <div id="foo-comments">
+            <span>Ahórrate $3000 con la nueva App</span>
+          </div>
+          <div class="foo-platform-digital">
+            <div>
+              <a href="">
+                <img src="/Assets/Img/footer/img-QR-Code.png" alt="QR Code" />
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img
+                  src="/Assets/Img/footer/img-Google-Play.png"
+                  alt="Google Play link"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="/Assets/Img/footer/img-App-Store.png"
+                  alt="App Store link"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="foo-social-media">
+            <a href="">
+              <i class="fa-brands fa-facebook-f fa-xl"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="foo-copyright">
+        <span>&copy; Copyright 2024. All right reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
