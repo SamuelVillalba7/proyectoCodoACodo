@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--CSS-->
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <link rel="stylesheet" href="../Css/header.css">
+    <link rel="stylesheet" href="../Css/home.css">
+    <link rel="stylesheet" href="../Css/login.css">
+
+<!-- SHORTCUT ICON -->
+<link rel="shortcut icon" type="image/x-icon" href="../Assets/logIn/favicon.ico">   
+
+<!--FONT AWESOME-->
+<script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
+
+<title>logIn</title>
+</head>
+
+<body>
+      <header>
+        <nav class="nav-container">
+          <div class="menu-mobile">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav-menu">
+              <div class="nav-logo">
+                  <span>Exclusive</span>
+              </div>
+              <div class="nav-section">
+                  <a href="../index.html">Home</a>
+                  <a href="#">Contact</a>
+                  <a href="#">About</a>
+                  <a href="../Html/signUp.html">Sign Up</a>
+              </div>
+          </div>
+          <div class="nav-search">
+              <div class="nav-input">
+                  <input type="search" name="" id="" placeholder="Buscar...">
+              </div>
+              <div class="nav-icons">
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                  <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              </div>
+          </div>
+        </nav>
+      </header> 
+
+<!-- MAIN LOGIN -->
+
+<div class="main-login-container">
+    <main class="main-login-box">
+        <img class="main-login-img" src="../Assets/logIn/create-account-img.png"  alt="imagen-login">
+        <div class="main-item-box">
+            <div class="main-item">
+            <h2>Log in to Exclusive</h2>
+            <br>
+            <p class="observation">Enter your details below</p>
+            <!-- <br> -->
+            </div>
+            <form id="loginForm">
+           
+            <div class="form-item">
+                <!-- <label for="email"><strong>Email:</strong></label> -->
+                <input type="email" id="email" name="email" placeholder="email" required>
+            </div>
+            <br>
+            <div class="form-item">
+                <!-- <label for="password"><strong>Password:</strong></label> -->
+                <input type="password" id="password" name="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
+            </div>
+            <br>
+           <div class="login-footer">
+                <div class="submit">
+                    <input class="" type="submit" value="Log In">
+                </div>
+            
+        
+            <br>
+            <div class="main-item-box-footer">
+                <p ><a class="login-a" href="../Html/recovery_password.html" target="_blank">Forget Password?</a></p>
+            </div>
+            </div>
+            <div class="login-footer-rememberme">
+                <label class="checkbox-remenberme">
+                    <input class="chek-box" type="checkbox" name="remember-me"> Remenber me
+                </label>
+            </div>
+            
+        </form>
+        </div>
+    </main>
+</div>
+
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var rememberMe = document.querySelector('input[name="remember-me"]').checked;
+
+        if (rememberMe) {
+            var userEmail = document.getElementById("email").value;
+            localStorage.setItem("userEmail", userEmail);
+        }
+
+        window.location.href = "../index.html";
+    });
+</script>
+
+
+<script src="login.js"></script>
+
+<!-- END MAIN LOGIN -->
+
+    <footer>
+      <div class="footer-container">
+          <div class="foo-section">
+              <div class="foo-brand" >
+                  <span class="foo-name-brand">Exclusive</span>
+              </div>
+              <div>
+                  <a href="" class="foo-subtitle">Nosotros</a>
+              </div>
+              <div>
+                  <label for="mail" class="foo-subtitle">Newsletter</label>
+                  <div class="subscribe-container">
+                      <input type="email" name="mail" id="mail" value="default@example.com">
+                      <button type="submit">Subscribete</button>
+                  </div>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Contáctanos</span>
+              </div>
+              <div class="foo-contact foo-subtitle">
+                  <span>Calle 0000,Ciudad</span>
+                  <span>CP 0000, Pais</span>
+                  <span>exclusive@mail.com</span>
+                  <span>9+54 000 0000000 </span>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Cuenta</span>
+              </div>
+              <div class="foo-subtitle">
+                  <a href="">Mi cuenta</a>
+                  <a href="#">Logueate/Registrate</a>
+                  <a href="">Carrito</a>
+                  <a href="">Lista de deseos</a>
+                  <a href="">Shop</a>
+              </div>
+              </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Legales</span>
+              </div>
+              <div class="foo-subtitle">
+                  <a href="">Políticas Privadas</a>
+                  <a href="">Términos de Uso</a>
+                  <a href="">FAQ</a>
+                  <a href="">Contacto</a>
+              </div>
+          </div>
+          <div class="foo-section">
+              <div class="foo-title">
+                  <span>Download App</span>
+              </div>
+              <div id="foo-comments">
+                  <span>Ahórrate $3000 con la nueva App</span>
+              </div>
+              <div class="foo-platform-digital">
+                  <div>
+                      <a href="">
+                          <img src="../Assets/footer/img-QR-Code.png" alt="QR Code">
+                      </a>
+                  </div>
+                  <div>
+                      <a href="">
+                          <img src="../Assets/footer/img-Google-Play.png" alt="">
+                      </a>
+                      <a href="">
+                          <img src="../Assets/footer/img-App-Store.png" alt="">
+                      </a>
+                  </div>
+              </div>
+              <div class="foo-social-media">
+                  <a href="">
+                      <i class="fa-brands fa-facebook-f fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-instagram fa-xl"></i>
+                  </a>
+                  <a href="">
+                      <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="foo-copyright">
+          <span>&copy; Copyright 2024. All right reserved</span>
+      </div>
+    </footer>
+
+</body>
+</html>
