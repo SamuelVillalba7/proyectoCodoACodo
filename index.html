@@ -15,18 +15,21 @@
   <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
 
+
   <title>Document</title>
 </head>
 
 <body>
       <header>
         <nav class="nav-container">
+          <div class="menu-mobile">
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
           <div class="nav-menu">
               <div class="nav-logo">
-                  <span>Exclusive</span>
-              </div>
-              <div class="menu-mobile">
-                <i class="fa-solid fa-bars"></i>
+                <span>Exclusive</span>
               </div>
               <div class="nav-section">
                   <a href="#">Home</a>
@@ -37,12 +40,18 @@
           </div>
           <div class="nav-search">
               <div class="nav-input">
-                  <input type="search" name="" id="" placeholder="Buscar...">
+                <input type="search" name="" id="" placeholder="Buscar...">
               </div>
               <div class="nav-icons">
+                <a href="#">
                   <i class="fa-regular fa-heart fa-xl"></i>
+                </a>
+                <a href="#">
                   <i class="cart-icon"></i>
-                  <i class="fa-regular fa-user fa-xl register-icon"></i>
+                </a>
+                <a href="#" class="logIn-icon">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                </a>
               </div>
           </div>
         </nav>
@@ -78,9 +87,18 @@
             </div>
           </div>
           <div class="menu-section-divider"></div>
-          <div class="menu-section-img">
-            <img src="./Assets/Img/principal main/imageHeader.png" alt="Imagen de cabecera">
-          </div>
+          <aside>
+            <div class="menu-section-subtittle">
+              <img src="./Assets/Img/principal main/Apple_gray_logo 1.png" alt="">
+              <h3>i Phone 14 Series </h3>
+            </div>
+            <div class="menu-section-tittle">
+              <h1>Hasta el 10% de Descuento</h1>  
+            </div>
+            <div class="menu-section-img">
+              <img src="./Assets/Img/principal main/imageHeader.png" alt="Imagen de cabecera">
+            </div>
+          </aside>
         </section>
 <!-- ------------------------------------- -->
       <section id="section-mejores-productos">
@@ -630,7 +648,7 @@
               <div class="foo-title">
                   <span>Contáctanos</span>
               </div>
-              <div class="foo-contact foo-subtitle">
+              <div class="foo-subtitle">
                   <span>Calle 0000,Ciudad</span>
                   <span>CP 0000, Pais</span>
                   <span>exclusive@mail.com</span>
@@ -702,6 +720,6 @@
           <span>&copy; Copyright 2024. All right reserved</span>
       </div>
     </footer>
-
+    <script src="./js/index.js"></script>
 </body>
 </html>
