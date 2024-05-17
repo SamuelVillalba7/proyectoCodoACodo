@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../Css/normalize.css" />
-    <link rel="stylesheet" href="../Css/producto.css" />
+    <link rel="stylesheet" href="../Css/product.css" />
     <link rel="stylesheet" href="../Css/header.css" />
     <link rel="stylesheet" href="../Css/footer.css" />
     <link
@@ -48,15 +48,16 @@
         </div>
       </nav>
     </header>
+
     <main>
       <div class="main-container">
-        <div class="ruta-producto">
+        <div class="path">
           <p>Cuenta / Gaming / <span>Joystic PlayStation 5</span></p>
         </div>
 
-        <article class="producto">
-          <section class="producto__imagenes">
-            <div class="imagenes__columna">
+        <article class="product">
+          <section class="product__imgs">
+            <div class="imgs__column">
               <img
                 src="../Assets/Img/productos/joystick1.webp"
                 alt="Imagen de producto 1"
@@ -75,7 +76,7 @@
               />
             </div>
 
-            <div class="imagenes__seleccionada">
+            <div class="imgs__selected">
               <img
                 src="../Assets/Img/productos/joystick1.webp"
                 alt="Imagen de producto seleccionada"
@@ -83,10 +84,10 @@
             </div>
           </section>
 
-          <section class="producto__informacion">
-            <section class="informacion__descripcion">
+          <section class="product__information">
+            <section class="information__description">
               <h2>Joystick PlayStation 5</h2>
-              <div class="descripcion__reseña">
+              <div class="description__review">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -94,8 +95,8 @@
                 <span class="fa fa-star"></span>
                 <p>(150 reseñas) <span>|</span> <span>En stock</span></p>
               </div>
-              <p class="descripcion__precio">$192.00</p>
-              <p class="descripcion__resumen">
+              <p class="description__price">$192.00</p>
+              <p class="description__summary">
                 PlayStation 5 joystick - Experimenta los juegos de próxima
                 generación con el controlador de PlayStation 5. Los disparadores
                 adaptativos, la retroalimentación háptica y los sensores de
@@ -104,27 +105,36 @@
               <hr />
             </section>
 
-            <section class="informacion__seleccion">
-              <div class="seleccion__colores">
+            <section class="information__selection">
+              <div class="seleccion__colors">
                 <p>Colores:</p>
                 <span></span>
                 <span></span>
               </div>
 
-              <div class="seleccion__botones">
-                <span class="botones__cantidad">
-                  <button type="button">-</button>
+              <div class="seleccion__buttons">
+                <span class="buttons__quantity">
+                  <button type="button" class="basic-button white-button">
+                    -
+                  </button>
                   <input type="text" name="" id="" pattern="\d*" />
-                  <button type="button">+</button>
+                  <button type="button" class="basic-button red-button">
+                    +
+                  </button>
                 </span>
-                <button type="submit" class="botones__compra">Buy Now</button>
-                <span class="botones__favorito">
+                <button
+                  type="submit"
+                  class="basic-button red-button buttons__buy"
+                >
+                  Comprar
+                </button>
+                <span class="buttons__favorite">
                   <i class="fa-regular fa-heart"></i>
                 </span>
               </div>
             </section>
 
-            <section class="informacion__envio">
+            <section class="information__shipment">
               <div>
                 <i class="fa-solid fa-truck" style="color: #1e3050"></i>
                 <ul>
@@ -143,17 +153,17 @@
           </section>
         </article>
 
-        <article class="items-relacionados">
-          <section class="items-relacionados__titulo">
+        <article class="items-related">
+          <section class="items-related__title">
             <span></span>
             <p>Items relacionados</p>
           </section>
 
-          <section class="items-relacionados__items">
-            <div class="items__carta">
-              <div class="carta__top">
-                <p class="carta__top-descuento">-40%</p>
-                <span class="carta__top-botones">
+          <section class="items-related__items">
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
                   <i class="fa-regular fa-heart"></i>
                 </span>
@@ -161,19 +171,19 @@
               <img
                 src="../Assets/Img/productos/joystick_relacionado1.webp"
                 alt=""
-                class="carta__img-producto"
+                class="cart__img-product"
               />
-              <div class="carta__carrito hidden">
+              <div class="cart__carrito hidden">
                 <p>Agregar al carrito</p>
               </div>
               <h3>Joystick inalámbrico Redragon Harrow</h3>
-              <p class="carta__precio">$120 <span>$160</span></p>
+              <p class="cart__price">$120 <span>$160</span></p>
             </div>
 
-            <div class="items__carta">
-              <div class="carta__top">
-                <p class="carta__top-descuento">-40%</p>
-                <span class="carta__top-botones">
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
                   <i class="fa-regular fa-heart"></i>
                 </span>
@@ -181,16 +191,16 @@
               <img
                 src="../Assets/Img/productos/joystick_relacionado2.webp"
                 alt=""
-                class="carta__img-producto"
+                class="cart__img-product"
               />
               <h3>Joystick Redragon Saturn G807</h3>
-              <p class="carta__precio">$120 <span>$160</span></p>
+              <p class="cart__price">$120 <span>$160</span></p>
             </div>
 
-            <div class="items__carta">
-              <div class="carta__top">
-                <p class="carta__top-descuento">-40%</p>
-                <span class="carta__top-botones">
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
                   <i class="fa-regular fa-heart"></i>
                 </span>
@@ -198,16 +208,16 @@
               <img
                 src="../Assets/Img/productos/joystick_relacionado3.webp"
                 alt=""
-                class="carta__img-producto"
+                class="cart__img-product"
               />
               <h3>Joystick Microsoft Xbox</h3>
-              <p class="carta__precio">$120 <span>$160</span></p>
+              <p class="cart__price">$120 <span>$160</span></p>
             </div>
 
-            <div class="items__carta">
-              <div class="carta__top">
-                <p class="carta__top-descuento">-40%</p>
-                <span class="carta__top-botones">
+            <div class="items__cart">
+              <div class="cart__top">
+                <p class="cart__top-descuento">-40%</p>
+                <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
                   <i class="fa-regular fa-heart"></i>
                 </span>
@@ -215,10 +225,10 @@
               <img
                 src="../Assets/Img/productos/joystick_relacionado4.webp"
                 alt=""
-                class="carta__img-producto"
+                class="cart__img-product"
               />
               <h3>Joystick inalámbrico Dehuka</h3>
-              <p class="carta__precio">$120 <span>$160</span></p>
+              <p class="cart__price">$120 <span>$160</span></p>
             </div>
           </section>
         </article>
