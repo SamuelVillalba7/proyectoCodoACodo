@@ -10,9 +10,59 @@
     padding: 0;
 }
 
+html {
+    height: unset;
+    width: unset;
+  }
+
 body{
     background-color: white;
 }
+
+
+
+/*Acordeon e imagen principal*/
+
+.menu-section-container{
+    max-width: 100vw;
+    height: 24rem;
+    display: flex;
+    flex-flow: row wrap;
+    }
+    
+    .menu-section-accordeon{
+        width: 13.56rem;
+        height: 21.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 2.47rem 1rem 8.75rem 0;
+        padding: 0 0 0 1rem;
+    }
+    .row-icon{
+    margin-left:8vw;
+    }
+    .menu-section-divider{
+        width: 0.03rem;
+        height: 21.5rem;
+        margin: 2.47rem 2.78rem 4.37rem 1rem;
+        opacity: 0.3;
+        background-color: #000;
+        border: 1px solid violet;
+    }
+    
+    .menu-section-img{
+        width: 45vw;
+        height: inherit;
+        margin: 0 0 4.37rem 2.78rem;
+        padding: 1rem auto 4rem;
+        background-color: #000;
+    }
+    
+/********************************/
+
 
 .titulo__color{
     color: var(--color) ;
@@ -235,6 +285,10 @@ margin-top: 50px;
         width: 30%;
         margin-bottom: 20px ; 
     }
+
+    & p{
+        text-align: center;
+    }
 }
 
 .servicio__titulo{
@@ -247,87 +301,9 @@ margin-top: 50px;
 
 
 /* cards de juan */
-/* .items-relacionados__items{
+.items-relacionados__items{
     flex-wrap: wrap;
-} */
-
- .items-relacionados__items {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-    & h3 {
-      margin-bottom: 15px;
-    }
-  }
-  
-  .items__carta {
-    width: 20%;
-    max-width: 270px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .carta__top {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 10px 0 10px;
-  }
-  
-  .carta__top-descuento {
-    height: 25px;
-    width: 55px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 5px 5px 5px;
-    background-color: crimson;
-  }
-  
-  .carta__top-botones {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  
-  .carta__img-producto {
-    height: 200px;
-    width: 100%;
-    object-fit: contain;
-  }
-  
-  .carta__precio {
-    color: crimson;
-  
-    & span {
-      color: black;
-      margin-left: 15px;
-    }
-  }
-  
-  .checked {
-    color: orange;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  .carta__carrito {
-    height: 35px;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    border-radius: 0 0 4px 4px;
-  }
-  
+}
  
   @media only screen and (min-width: 768px) and (max-width: 1024px){
 
@@ -462,6 +438,12 @@ margin-top: 50px;
 
   @media only screen and (width <= 767px){
     
+    html {
+        min-width: unset;
+      }
+    
+
+
     #main-home{
         padding: 20px;
     }
