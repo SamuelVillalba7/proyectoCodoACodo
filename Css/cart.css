@@ -44,7 +44,7 @@ article {
   justify-content: space-between;
 }
 
-.ruta-producto {
+.path {
   color: gray;
   word-spacing: 10px;
   margin-bottom: 80px;
@@ -56,23 +56,23 @@ article {
   }
 }
 
-.carrito {
+.cart {
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
-.carrito__header,
-.carrito__producto,
-.carrito__botones,
-.carrito__tail {
+.cart__header,
+.cart__product,
+.cart__buttons,
+.cart__tail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.carrito__header {
+.cart__header {
   height: 70px;
   text-align: center;
   margin-bottom: 25px;
@@ -82,7 +82,7 @@ article {
   }
 }
 
-.carrito__producto {
+.cart__product {
   height: 100px;
   margin-bottom: 25px;
 
@@ -106,7 +106,7 @@ article {
   }
 }
 
-.carrito__botones {
+.cart__buttons {
   height: 55px;
   margin-bottom: 35px;
 
@@ -120,17 +120,21 @@ article {
   }
 }
 
-.carrito__tail {
+.cart__tail {
   height: 320px;
 }
 
-.tail__cupones {
+.tail__cupons {
   height: 100%;
   width: 60%;
 
   & input {
     height: 50px;
     width: 60%;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   & button {
@@ -140,7 +144,7 @@ article {
   }
 }
 
-.tail__resumen {
+.tail__summary {
   height: 100%;
   width: 40%;
   border: 1.5px solid black;
@@ -172,17 +176,17 @@ article {
     padding: 15px;
   }
 
-  .ruta-producto {
+  .path {
     margin-bottom: 60px;
   }
 
-  .carrito__header {
+  .cart__header {
     & p {
       font-size: 0.9rem;
     }
   }
 
-  .carrito__producto {
+  .cart__product {
     & p {
       font-size: 0.9rem;
     }
@@ -192,7 +196,7 @@ article {
     }
   }
 
-  .carrito__botones {
+  .cart__buttons {
     margin-bottom: 65px;
     gap: 10px;
 
@@ -202,13 +206,13 @@ article {
     }
   }
 
-  .carrito__tail {
+  .cart__tail {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
   }
 
-  .tail__cupones {
+  .tail__cupons {
     height: 20%;
     width: 100%;
     display: flex;
@@ -225,19 +229,19 @@ article {
     }
   }
 
-  .tail__cupones {
+  .tail__cupons {
     & input {
       height: 50px;
     }
   }
 
-  .tail__resumen {
+  .tail__summary {
     height: 80%;
     width: 100%;
   }
 }
 
-.boton-basico {
+.basic-button {
   font-size: 0.85rem;
   font-weight: bold;
   border: none;
@@ -245,13 +249,21 @@ article {
   padding: 5px 10px;
 }
 
-.boton-rojo {
+.red-button {
   color: white;
   background-color: red;
+
+  &:active {
+    background-color: rgb(202, 12, 50);
+  }
 }
 
-.boton-blanco {
+.white-button {
   color: black;
   background-color: white;
   border: 1px solid black;
+
+  &:active {
+    background-color: rgb(184, 178, 178);
+  }
 }
