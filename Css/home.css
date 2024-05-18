@@ -301,7 +301,7 @@ margin-top: 50px;
 
 
 /* cards de juan */
-.items-relacionados__items{
+.items-related__items{
     flex-wrap: wrap;
 }
  
@@ -583,21 +583,21 @@ margin-top: 50px;
 
 
 
-    .carta__top{
+    .cart__top{
         flex-direction: row;
     }
 
 
-    .items-relacionados{
+    .items-related{
         height: auto;
     } 
-    .items__carta{
+    .items__cart{
         width: 40%;
         max-width: unset;
         margin-bottom: 2rem;
         
     }
-    .items-relacionados__items{
+    .items-related__items{
         justify-content: space-around;
 
     }
