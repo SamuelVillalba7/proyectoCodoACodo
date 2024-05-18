@@ -15,12 +15,6 @@
   padding: 0;
 }
 
-body{
-  * {
-    box-sizing: unset;
-  }
-}
-
 
 /* inicio header  */
 
