@@ -478,7 +478,127 @@ margin-top: 1rem;
     margin-top: 1rem;
     }
 }
-/****************MOBILE***********************/
+
+@media only screen and (min-width: 766px) and (max-width: 1023px) {
+
+  /**********Header************************/
+  
+header{
+  padding: 2.68rem 1rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav-container{
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+  
+.nav-menu{
+  width: 35vw;
+  height: 1.5rem;
+}
+
+.nav-logo{
+  margin-top: 0.5rem;
+}
+
+.menu-mobile{
+  margin-top: 0.5rem;
+}
+
+.nav-section{
+  display: none;
+}
+
+.nav-search{
+  width: 55vw;
+  height: 1.8rem;
+  }
+  
+  .nav-input input{
+  width:80vw;
+}
+
+.nav-icons{
+  width: 30vw;
+  position: absolute;
+  top:3rem;
+  left: 55%;
+  padding: 0 1rem 0;
+  margin-left: 1.2rem;
+  gap:1rem
+}
+.logIn-icon{
+  display: flex;
+  align-items: center;
+}
+
+/**********Fin Header************************/
+
+/*****Acordeon e imagen principal**********/
+
+.menu-section-container{
+  width: 90vw;
+  height: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.menu-section-accordeon{
+  height:14rem;
+  display: flex;
+  margin-bottom:2rem;
+}
+.row-icon{
+  margin-left:8vw;
+}
+.menu-section-divider{
+  height: 15rem;
+}
+
+aside{
+  width: 78vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  justify-content: center;
+  margin: 0 0 4.37rem 1rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.menu-section-subtittle{
+  height: 2rem;
+  margin-top:6rem;
+  padding-bottom:20rem ;
+}
+
+.menu-section-img{
+  top: 25rem;
+  left: 29vw;
+  top:20rem;
+}
+.menu-section-img img{
+  width: 45vw;
+}
+
+.menu-section-tittle{
+  top: 2rem;
+  right:40%;
+  font-size: 1.8rem;
+}
+
+#section-mejores-productos{
+  margin-top:28rem ;
+}
+
+.product-container{
+margin-top:28rem;
+}
+}
+
 /****************MOBILE***********************/
 @media only screen and (width <= 767px){
 
@@ -598,3 +718,4 @@ margin-top: 1rem;
     margin-top:28rem;
   }
 }
+
