@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <!--CSS-->
-    <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="../Css/footer.css">
-    <link rel="stylesheet" href="../Css/header.css">
-    <link rel="stylesheet" href="../Css/home.css">
+    <link rel="stylesheet" href="../Css/normalize.css"/>
+    <link rel="stylesheet" href="../Css/productos.css"/> 
+    <link rel="stylesheet" href="../Css/footer.css"/>
+    <link rel="stylesheet" href="../Css/header.css"/>
+    <link rel="stylesheet" href="../Css/home.css"/>
     <link rel="stylesheet" href="../Css/signUp.css">
 
 <!-- SHORTCUT ICON -->
@@ -22,206 +23,281 @@
 <!--FONT AWESOME-->
 <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
 
-<title>signUp</title>
+<title>signUp Exclusive</title>
 </head>
 
 <body>
-      <header>
+    <header>
         <nav class="nav-container">
           <div class="menu-mobile">
+            <a href="#" title="Menu">
               <i class="fa-solid fa-bars"></i>
+            </a>
           </div>
           <div class="nav-menu">
               <div class="nav-logo">
-                  <span>Exclusive</span>
+                <span>Exclusive</span>
               </div>
               <div class="nav-section">
                   <a href="../index.html">Home</a>
-                  <a href="#">Contact</a>
-                  <a href="#">About</a>
+                  <a href="./error.html">Contact</a>
+                  <a href="./error.html">About</a>
                   <a href="#">Sign Up</a>
               </div>
           </div>
           <div class="nav-search">
               <div class="nav-input">
-                  <input type="search" name="" id="" placeholder="Buscar...">
+                <input type="search" name="" id="" placeholder="Search...">
               </div>
               <div class="nav-icons">
+                <a href="#" title="like">
                   <i class="fa-regular fa-heart fa-xl"></i>
-                  <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                </a>
+                <a href="./cart.html" title="cart">
+                  <i class="cart-icon"></i>
+                </a>
+                <a href="./logIn.html" class="logIn-icon" title="Log In">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                </a>
               </div>
           </div>
         </nav>
       </header> 
+
 
 <!-- MAIN SIGNUP -->
 
 <div class="main-login-container">
     <main class="main-login-box">
         <img class="main-login-img" src="../Assets/Img/signUp/create-account-img.png"  alt="imagen-login">
-        <div class="main-item-box">
+        <article class="main-item-box">
             <div class="main-item">
-            <h2>Create an account</h2>
-            <br>
-            <p class="observation">Enter your details below</p>
-            <!-- <br> -->
+                <h2>Create an account</h2>
+                <br>
+                <p class="observation">Enter your details below</p>
             </div>
             <form id="createAccountForm">
-            <div class="form-item">
-                <!-- <label for="username"><strong>Username: </strong></label> -->
-                <input type="text" id="username" name="username" placeholder="name" pattern="^\S{4,}$" required>
-                <p class="observation">(minimum 4 characters, no spaces)</p>
-            </div>
-            <br>
-            <div class="form-item">
-                <!-- <label for="email"><strong>Email:</strong></label> -->
-                <input type="email" id="email" name="email" placeholder="email" required>
-            </div>
-            <br>
-            <div class="form-item">
-                <!-- <label for="password"><strong>Password:</strong></label> -->
-                <input type="password" id="password" name="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
-                <p class="observation">(minimum 11 characters, at least one uppercase, one lowercase, one number, one symbol)</p>
-            </div>
-            <br>
-            <div class="form-item">
-                <!-- <label for="confirm_password"><strong>Confirm Password:</strong></label> -->
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password" required>
-            </div>
-            <div class="checkbox-container">
-                <div class="terminos-y-condiciones">
-                    <label>
-                        <input type="checkbox" name="terminos-y-condiciones" required>
-                        He leído y acepto los  <a id="terminos_condiciones" href=""> términos y condiciones</a>
-                    </label>
+                <div class="form-item">
+                    <input type="text" id="username" name="username" placeholder="username*" pattern="^\S{4,}$" required>
+                    <p class="observation">(minimum 4 characters, no spaces)</p>
                 </div>
+                <br>
+                <div class="form-item">
+                    <input type="email" id="email" name="email" placeholder="email*" required>
+                </div>
+                <br>
+                <div class="form-item">
+                    <input type="password" id="password" name="password" placeholder="password*" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
+                    <p class="observation">(minimum 11 characters, at least one uppercase, one lowercase, one number, one symbol)</p>
+                </div>
+                <br>
+                <div class="form-item">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password*" required>
+                </div>
+                <section class="checkbox-container">
+                    <!-- Checkbox para términos y condiciones -->
+                    <div class="terminos-y-condiciones">
+                        <label>
+                            <input type="checkbox" name="terminos-y-condiciones" required>
+                            He leído y acepto los  <a id="terminos_condiciones" href="../Assets/Img/signUp/terminos_y_condiciones.pdf" target="_blank"> términos y condiciones</a>*
+                        </label>
+                    </div>
+
+                
+                    <!-- Checkbox para política de privacidad -->
+                    <div class="politica-de-privacidad">
+                        <label>
+                            <input type="checkbox" name="politica-de-privacidad" required>
+                            He leído y acepto la <a id="politica_privacidad" href="../Assets/Img/signUp/politica_de_privacidad.pdf" target="_blank"> Política de Privacidad</a>*
+                        </label>
+                    </div>
             
-            <!-- Checkbox para suscribirse a ofertas y novedades -->
-                <div class="ofertas-y-novedades">
-                    <label>
-                        <input type="checkbox" name="ofertas-y-novedades">
-                        Quiero recibir ofertas y novedades
-                    </label>
+                    <!-- Checkbox para suscribirse a ofertas y novedades -->
+                    <div class="ofertas-y-novedades">
+                        <label>
+                            <input type="checkbox" name="ofertas-y-novedades">
+                            Quiero recibir ofertas y novedades
+                        </label>
+                    </div>
+                </section>
+                <br>
+                <div class="submit">
+                    <input class="" type="submit" value="Create Account">
                 </div>
-            </div>
-            <br>
-            <div class="submit">
-                <input class="" type="submit" value="Create Account">
-            </div>
             </form>
             <br>
             <div class="main-item-box-footer">
                 <p class="observation">Already have an account? <a class="login-a" href="../Html/logIn.html" target="_blank">Log in</a></p>
             </div>
-        </div>
+        </article>
     </main>
 </div>
-<script>
-    document.getElementById("createAccountForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        window.location.href = "./logIn.html";
-    });
-</script>
-
-
-<script src="signUp.js"></script>
 
 <!-- END MAIN SIGNUP -->
 
-    <footer>
-      <div class="footer-container">
-          <div class="foo-section">
-              <div class="foo-brand" >
-                  <span class="foo-name-brand">Exclusive</span>
-              </div>
-              <div>
-                  <a href="" class="foo-subtitle">Nosotros</a>
-              </div>
-              <div>
-                  <label for="mail" class="foo-subtitle">Newsletter</label>
-                  <div class="subscribe-container">
-                      <input type="email" name="mail" id="mail" value="default@example.com">
-                      <button type="submit">Subscribete</button>
-                  </div>
-              </div>
+
+<!-- SIGNUP SCRIPT  -->
+
+<script>
+    
+    const form = document.getElementById('createAccountForm');
+    const usernameInput = document.getElementById('username');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm_password');
+    const confirmErrorMessage = document.getElementById('confirm-error');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        window.location.href = "./logIn.html";
+
+    // Input validation
+        const username = usernameInput.value.trim();
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+        const confirmPassword = confirmPasswordInput.value.trim();
+
+    // Password confirmation check
+        if (password !== confirmPassword) {
+            confirmErrorMessage.textContent = 'Passwords must match';
+            return; // Prevent further processing if passwords don't match
+        }
+
+    // Create user data object
+        const userData = {
+            username,
+            email,
+            password
+        };
+
+    // Convert user data to JSON string
+        const userDataJSON = JSON.stringify(userData);
+        
+    // Save user data to local storage
+        localStorage.setItem('userData', userDataJSON);
+
+    // Display success message or perform other actions (e.g., redirect to login page)
+        alert('Account created successfully!');
+    });
+
+    // Real-time password confirmation check
+    confirmPasswordInput.addEventListener('input', function() {
+        const password = passwordInput.value.trim();
+        const confirmPassword = confirmPasswordInput.value.trim();
+
+        if (password !== confirmPassword) {
+            confirmErrorMessage.textContent = 'Passwords must match';
+        } else {
+            confirmErrorMessage.textContent = ''; // Clear error message if passwords match
+        }
+    });
+
+</script>
+
+<!-- END SIGNUP SCRIPT-->
+
+
+
+<footer>
+    <div class="footer-container">
+      <div class="foo-section">
+          <div class="foo-brand" >
+              <span class="foo-name-brand">Exclusive</span>
           </div>
-          <div class="foo-section">
-              <div class="foo-title">
-                  <span>Contáctanos</span>
-              </div>
-              <div class="foo-contact foo-subtitle">
-                  <span>Calle 0000,Ciudad</span>
-                  <span>CP 0000, Pais</span>
-                  <span>exclusive@mail.com</span>
-                  <span>9+54 000 0000000 </span>
-              </div>
+          <div>
+              <a href="" class="foo-subtitle foo-subtitle-mobile">About Us</a>
           </div>
-          <div class="foo-section">
-              <div class="foo-title">
-                  <span>Cuenta</span>
-              </div>
-              <div class="foo-subtitle">
-                  <a href="">Mi cuenta</a>
-                  <a href="../Html/logIn.html"">Logueate/Registrate</a>
-                  <a href="">Carrito</a>
-                  <a href="">Lista de deseos</a>
-                  <a href="">Shop</a>
-              </div>
-              </div>
-          <div class="foo-section">
-              <div class="foo-title">
-                  <span>Legales</span>
-              </div>
-              <div class="foo-subtitle">
-                  <a href="">Políticas Privadas</a>
-                  <a href="">Términos de Uso</a>
-                  <a href="">FAQ</a>
-                  <a href="">Contacto</a>
-              </div>
-          </div>
-          <div class="foo-section">
-              <div class="foo-title">
-                  <span>Download App</span>
-              </div>
-              <div id="foo-comments">
-                  <span>Ahórrate $3000 con la nueva App</span>
-              </div>
-              <div class="foo-platform-digital">
-                  <div>
-                      <a href="">
-                          <img src="../Assets/Img/footer/img-QR-Code.png" alt="QR Code">
-                      </a>
-                  </div>
-                  <div>
-                      <a href="">
-                          <img src="../Assets/Img/footer/img-Google-Play.png" alt="">
-                      </a>
-                      <a href="">
-                          <img src="../Assets/Img/footer/img-App-Store.png" alt="">
-                      </a>
-                  </div>
-              </div>
-              <div class="foo-social-media">
-                  <a href="">
-                      <i class="fa-brands fa-facebook-f fa-xl"></i>
-                  </a>
-                  <a href="">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                  </a>
-                  <a href="">
-                      <i class="fa-brands fa-instagram fa-xl"></i>
-                  </a>
-                  <a href="">
-                      <i class="fa-brands fa-linkedin-in fa-xl"></i>
-                  </a>
+          <div>
+              <label for="mail" class="foo-subtitle">Newsletter</label>
+              <div class="subscribe-container">
+                  <input type="email" name="mail" id="mail" value="default@example.com">
+                  <button type="submit">Subscribe</button>
               </div>
           </div>
       </div>
-      <div class="foo-copyright">
-          <span>&copy; Copyright 2024. All right reserved</span>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Support</span>
+          </div>
+          <div class="foo-subtitle">
+              <span>Street 0000,City</span>
+              <span>Zip 0000, Country</span>
+              <span><a href="mailto:exclusive@mail.com">exclusive@mail.com</a></span>
+              <span><a href="https://wa.me/+5491112345678">9+54 000 0000000</a> </span>
+          </div>
       </div>
-    </footer>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Account</span>
+          </div>
+          <div class="foo-subtitle">
+              <a href="./account.html">My Account</a>
+              <a href="./logIn.html">Login/Register</a>
+              <a href="./cart.html">Cart</a>
+              <a href="./error.html">Wishlist</a>
+              <a href="./product.html">Shop</a>
+          </div>
+          </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Quick Link</span>
+          </div>
+          <div class="foo-subtitle">
+              <a href="../Assets/Img/signUp/politica_de_privacidad.pdf" title="Abrir Política de Privacidad en una nueva pestaña">Privacy Policy</a>
+              <a href="../Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
+              <a href="./error.html">FAQ</a>
+              <a href="./error.html">Contact</a>
+          </div>
+      </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Download App</span>
+          </div>
+          <div id="foo-comments">
+              <span>Save $3000 with App New User Only</span>
+          </div>
+          <div class="foo-platform-digital">
+              <div>
+                  <a href="">
+                      <img src="../Assets/Img/footer/img-QR-Code.png" alt="QR Code">
+                  </a>
+              </div>  
+              <div>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-Google-Play.png" alt="">
+                  </a>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-App-Store.png" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="foo-social-media">
+              <a href="https://facebook.com/exclusive" target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </a>
+              <a href="https://twitter.com/exclusive"
+              target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+              </a>
+              <a href="https://www.instagram.com/exclusive/?hl=es-la"
+              target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/exclusive-techstore"  target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="foo-copyright">
+      <span>&copy; Copyright 2024. <strong>Exclusive</strong> All right reserved</span>
+  </div>
+  </footer>
 
 </body>
 </html>
