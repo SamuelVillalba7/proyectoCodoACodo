@@ -345,9 +345,9 @@ footer{
   margin-top: 1rem;
 }
 
-.foo-subtitle{
+/*.foo-subtitle{
   display: none;
-}
+}*/
 
 .foo-subtitle-mobile{
   display: flex;

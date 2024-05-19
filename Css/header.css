@@ -170,6 +170,7 @@ a{
   display: flex;
   flex-flow: row wrap;
   height: 24rem;
+  width: 85vw;
 }
 
 .menu-section-accordeon{
@@ -223,11 +224,11 @@ aside{
 }
 
 .menu-section-img{
-  width:90vw;
+  width:38vw;
   position: absolute;
   bottom: 2rem;
   left: 47vw;
-  margin-right: 6%;
+  margin-right: 1%;
 }
 
 .menu-section-img img{
@@ -263,16 +264,9 @@ header{
 
 .nav-menu{
   gap: .5rem;
-  }
-  
-
-  
+}
 
 
-
-
-
-  
 .nav-search{
   width: 15rem;
   display: flex;
@@ -325,7 +319,7 @@ aside{
 }
   
 .menu-section-img img{
-  width:24rem;
+  width:25vw;
 }
   
 .menu-section-tittle{
@@ -340,7 +334,7 @@ aside{
 }
 }
 
-@media only screen and (min-width: 766px) and (max-width: 1023px) {
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
 
   /**********Header************************/
   
@@ -555,17 +549,18 @@ margin-top:28rem;
   }
   
   .menu-section-img{
-      top: 25rem;
-      left: 5vw;
+      top: 28rem;
+      left: auto;
+      right: auto;
   }
   .menu-section-img img{
-      width: 78vw;
+      width: 60vw;
       height:auto;
   }
   
   .menu-section-tittle{
       top: -5.5rem;
-      right:60%;
+      right:65%;
       font-size: 1.4rem;
   }
   
