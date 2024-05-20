@@ -70,6 +70,7 @@ header{
   height: 1.5rem;
   display: flex;
   align-items: center;
+  visibility: hidden;
 }
 .fa-solid,
 .fa-heart,
@@ -183,6 +184,7 @@ a{
   gap: 1rem;
   margin: 0 1rem 4.37rem 0;
   padding: 0 1rem 1rem 1rem;
+  visibility: hidden;
 }
 
 .menu-section-accordeon div a{
@@ -283,6 +285,10 @@ header{
   gap: 1rem;
 }
 
+.menu-mobile{
+  visibility: visible;
+}
+
   /******* fin header  ********/
   
   /****Acordeon e imagen principal******/
@@ -298,6 +304,7 @@ header{
   display: flex;
   gap: 0.5rem;
   padding: 0 .5rem 1rem 1rem;
+  visibility: visible;
 }
 
 
@@ -358,6 +365,7 @@ header{
 }
 
 .menu-mobile{
+  visibility: visible;
   margin-top: 0.5rem;
 }
 
@@ -404,6 +412,7 @@ header{
   height:14rem;
   display: flex;
   margin-bottom:2rem;
+  visibility: visible;
 }
 .row-icon{
   margin-left:8vw;
@@ -479,6 +488,7 @@ margin-top:28rem;
   
   .menu-mobile{
       margin-top: 0.5rem;
+      visibility: visible;
   }
   
   .nav-section{
@@ -524,6 +534,7 @@ margin-top:28rem;
       height:14rem;
       display: flex;
       margin-bottom:2rem;
+      visibility: visible;
   }
   .row-icon{
       margin-left:8vw;
