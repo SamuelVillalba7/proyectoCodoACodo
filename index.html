@@ -28,7 +28,7 @@
         <nav class="nav-container">
           <div class="menu-mobile">
             <a href="#">
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-bars" id="clickMe"></i>
             </a>
           </div>
           <div class="nav-menu">
@@ -615,7 +615,7 @@
     </main>
 
 
-    <footer>
+    <footer id="foo-contain">
       <div class="footer-container">
         <div class="foo-section">
             <div class="foo-brand" >
@@ -632,9 +632,10 @@
                 </div>
             </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
             <div class="foo-title">
                 <span>Support</span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="foo-subtitle">
                 <span>Street 0000,City</span>
@@ -643,9 +644,10 @@
                 <span>9+54 000 0000000 </span>
             </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
             <div class="foo-title">
                 <span>Account</span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="foo-subtitle">
                 <a href="">My Account</a>
@@ -655,9 +657,10 @@
                 <a href="">Shop</a>
             </div>
             </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
             <div class="foo-title">
                 <span>Quick Link</span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="foo-subtitle">
                 <a href="">Privacy Policy</a>
@@ -666,14 +669,16 @@
                 <a href="">Contact</a>
             </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
             <div class="foo-title">
                 <span>Download App</span>
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <div id="foo-comments">
+            <div class=" content-media">
+              <div id="foo-comments">
                 <span>Save $3000 with App New User Only</span>
-            </div>
-            <div class="foo-platform-digital">
+              </div>
+              <div class="foo-platform-digital">
                 <div>
                     <a href="">
                         <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code">
@@ -687,8 +692,8 @@
                         <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-App-Store.png" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="foo-social-media">
+              </div>
+              <div class="foo-social-media">
                 <a href="">
                     <i class="fa-brands fa-facebook-f fa-xl"></i>
                 </a>
@@ -701,6 +706,7 @@
                 <a href="">
                     <i class="fa-brands fa-linkedin-in fa-xl"></i>
                 </a>
+              </div>
             </div>
         </div>
     </div>
@@ -708,9 +714,9 @@
         <span>&copy; Copyright 2024. All right reserved</span>
     </div>
     </footer>
-    
-
   
+  <!--JAVASCRIPT-->
+    <script src="./Js/index.js"></script>
 
 </body>
 </html>

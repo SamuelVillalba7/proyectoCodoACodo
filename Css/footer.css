@@ -55,8 +55,12 @@ footer{
   line-height: 1.4;
   letter-spacing: normal;
   text-align: left;
+  border-bottom: 2px solid var(--color-text-footer)
 }
 
+.foo-title>i{
+  visibility: hidden;
+}
 .foo-brand{
   flex-grow: 0;
   display: flex;
@@ -96,6 +100,9 @@ footer{
   color: var(--color-text-footer)
 }
 
+.section-mobile{
+  height: 35vh;
+}
 .subscribe-container{
   display:inline-flex;
   gap: 1rem;
@@ -147,6 +154,7 @@ footer{
   letter-spacing: normal;
   text-align: left;
   color: var(--color-text-footer);
+  margin-bottom: 2rem;
 }
 
 .foo-platform-digital{
@@ -341,13 +349,25 @@ footer{
   padding:5vh 2rem;
 }
 
-.foo-title{
-  margin-top: 1rem;
+.section-mobile{
+  height: 10vh;
+  overflow: hidden;
+  transition: 2s;
 }
 
-.foo-subtitle{
-  display: none;
+.foo-title{
+  margin-top: 1rem;
+  cursor: pointer;
 }
+
+.foo-title>i{
+  visibility: visible;
+  color: var(--color-text-footer);
+}
+
+/*.foo-subtitle{
+  display: none;
+}*/
 
 .foo-subtitle-mobile{
   display: flex;
@@ -362,6 +382,22 @@ footer{
   text-align: left
 }
 
+.content-media{
+  height: 35vh;
+}
+
+.fa-chevron-down{
+  margin-left: 4rem;
+  transition: 3s;
+}
+
+.scale{
+  height: 42vh;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
 label[class~="foo-subtitle"]{
   display: flex;
   flex-flow: column wrap;
@@ -374,6 +410,5 @@ label[class~="foo-subtitle"]{
   letter-spacing: normal;
   text-align: left
 }
-
 }
 
