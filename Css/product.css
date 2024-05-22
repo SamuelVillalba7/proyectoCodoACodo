@@ -1,15 +1,15 @@
 :root {
+  --color: #dc143c;
+  --fuente-titulo: Verdana, Geneva, Tahoma, sans-serif;
   --fuente-texto: "Montserrat";
-}
-
-html {
-  height: 100%;
-  width: 100%;
+  --color-footer: #4f0217;
+  --color-navbar: #8d0e33;
+  --color-text-dark: #1f1f29;
+  --color-text: #f9f9f4;
+  --color-text-footer: #fff1c5;
 }
 
 body {
-  height: 100%;
-  min-height: 1500px;
   font-family: var(--fuente-texto);
   background-color: rgb(237, 237, 237);
 
@@ -22,6 +22,11 @@ body {
     font-size: 1rem;
     margin: 0;
   }
+}
+
+header,
+footer {
+  box-sizing: inherit;
 }
 
 main {
@@ -51,7 +56,7 @@ article {
   margin-bottom: 80px;
 
   & span {
-    color: black;
+    color: var(--color-text-dark);
     font-weight: bold;
     word-spacing: 2px;
   }
@@ -160,7 +165,7 @@ article {
   }
 
   & span:nth-of-type(1) {
-    background-color: red;
+    background-color: var(--color);
   }
 
   & span:nth-of-type(2) {
@@ -219,11 +224,12 @@ article {
 
   & i {
     font-size: 1.3rem;
+    color: red;
   }
 }
 
 .information__shipment {
-  height: 180px;
+  height: 230px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -235,6 +241,7 @@ article {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 15px 0;
   }
 
   & div:nth-of-type(1) {
@@ -252,8 +259,8 @@ article {
     padding-left: 25px;
 
     & li:nth-of-type(1) {
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 1.15rem;
+      font-weight: 600;
     }
   }
 }
@@ -274,7 +281,7 @@ article {
   & span {
     height: 100%;
     width: 20px;
-    background-color: red;
+    background-color: var(--color);
   }
 
   & p {
@@ -294,7 +301,7 @@ article {
 }
 
 .items__cart {
-  width: 20%;
+  width: 30%;
   max-width: 270px;
   display: flex;
   flex-direction: column;
@@ -309,10 +316,10 @@ article {
 .cart__top-descuento {
   height: 25px;
   width: 55px;
-  color: white;
+  color: var(--color-text);
   text-align: center;
   padding: 2px 5px 5px 5px;
-  background-color: red;
+  background-color: var(--color);
 }
 
 .cart__top-buttons {
@@ -330,10 +337,10 @@ article {
 }
 
 .cart__price {
-  color: red;
+  color: var(--color);
 
   & span {
-    color: black;
+    color: var(--color-text-dark);
     margin-left: 15px;
   }
 }
@@ -373,6 +380,7 @@ article {
     max-width: none;
     margin: auto 0;
     padding: 20px;
+    justify-content: center;
   }
 
   .path {
@@ -416,17 +424,19 @@ article {
   }
 
   .items-related__items {
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .items__cart {
-    width: 25%;
+    width: 50%;
     justify-content: space-between;
+    margin-top: 30px;
   }
 
   .cart__top {
     gap: 15px;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .cart__top-descuento {
@@ -443,7 +453,7 @@ article {
   }
 
   .cart__img-product {
-    height: 130px;
+    height: 90px;
   }
 
   .cart__price {
@@ -462,6 +472,10 @@ article {
   .information__shipment {
     font-size: 0.75rem;
   }
+
+  .cart__img-product {
+    height: 50px;
+  }
 }
 
 .basic-button {
@@ -473,8 +487,8 @@ article {
 }
 
 .red-button {
-  color: white;
-  background-color: red;
+  color: var(--color-text);
+  background-color: var(--color);
 
   &:active {
     background-color: rgb(202, 12, 50);
@@ -482,11 +496,19 @@ article {
 }
 
 .white-button {
-  color: black;
+  color: var(--color-text-dark);
   background-color: white;
   border: 1px solid black;
 
   &:active {
     background-color: rgb(184, 178, 178);
   }
+}
+
+.truck {
+  color: #1e3050 !important;
+}
+
+.heart {
+  color: var(--color) !important;
 }
