@@ -1,14 +1,15 @@
 :root {
+  --color: #dc143c;
+  --fuente-titulo: Verdana, Geneva, Tahoma, sans-serif;
   --fuente-texto: "Montserrat";
-}
-
-html {
-  height: 100%;
-  width: 100%;
+  --color-footer: #4f0217;
+  --color-navbar: #8d0e33;
+  --color-text-dark: #1f1f29;
+  --color-text: #f9f9f4;
+  --color-text-footer: #fff1c5;
 }
 
 body {
-  height: 100%;
   font-family: var(--fuente-texto);
   background-color: rgb(237, 237, 237);
 
@@ -21,6 +22,11 @@ body {
     font-size: 1rem;
     margin: 0;
   }
+}
+
+header,
+footer {
+  box-sizing: inherit;
 }
 
 main {
@@ -50,7 +56,7 @@ article {
   margin-bottom: 80px;
 
   & span {
-    color: black;
+    color: var(--color-text-dark);
     font-weight: bold;
     word-spacing: 2px;
   }
@@ -116,7 +122,7 @@ article {
   }
 
   & a {
-    color: black;
+    color: var(--color-text-dark);
   }
 }
 
@@ -250,8 +256,8 @@ article {
 }
 
 .red-button {
-  color: white;
-  background-color: red;
+  color: var(--color-text);
+  background-color: var(--color);
 
   &:active {
     background-color: rgb(202, 12, 50);
@@ -259,7 +265,7 @@ article {
 }
 
 .white-button {
-  color: black;
+  color: var(--color-text-dark);
   background-color: white;
   border: 1px solid black;
 
