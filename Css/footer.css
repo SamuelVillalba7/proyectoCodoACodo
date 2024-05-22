@@ -18,20 +18,19 @@
 /*****************Footer***********/
 
 footer{
-  max-width:100%;
+  width:100vh;
   height:17.5rem;
   margin-top: 10vh;
   background-color: var(--color-footer);
-  font-family:var(--fuente-texto)
+  font-family:var(--fuente-texto);
 }
 
 .footer-container{
-  width: inherit;
-  height: 17.5rem;
+  width:inherit;
   display: flex;
   flex-flow: row;
-  justify-content:center;
-  align-items: flex-start;
+  align-items:center;
+  justify-content: space-evenly;
   padding:5vh 2rem  5vh 5rem;
   background-color:var(--color-footer);
   color:var(--color-text-footer);
@@ -118,7 +117,7 @@ footer{
 }
 
 .foo-copyright{
-  max-width: 100%;
+  width: 100%;
   height: 4rem;
   padding:1.5rem auto 1.5rem;
   color:var(--color-text-footer);
@@ -191,7 +190,7 @@ footer{
   width:94.5vw;
   display: flex;
   flex-flow: row;
-  justify-content:flex-start;
+  justify-content:space-evenly;
   align-items: flex-start;
   padding:5vh 1rem;
 }
@@ -341,12 +340,13 @@ footer{
 }
 
 .footer-container{
+  width: 100vw;
   height: inherit;
   display: flex;
   flex-flow: row wrap;
   justify-content:center;
   align-items: flex-start;
-  padding:5vh 2rem;
+  padding:5vh 1rem;
 }
 
 .section-mobile{
@@ -365,9 +365,6 @@ footer{
   color: var(--color-text-footer);
 }
 
-/*.foo-subtitle{
-  display: none;
-}*/
 
 .foo-subtitle-mobile{
   display: flex;
@@ -409,6 +406,13 @@ label[class~="foo-subtitle"]{
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left
+}
+
+.foo-copyright{
+  width: 100vw;
+  padding:1.5rem auto;
+  display: flex;
+  justify-content: center;
 }
 }
 

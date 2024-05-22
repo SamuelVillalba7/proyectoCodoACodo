@@ -259,12 +259,11 @@ header{
 }
 
 .nav-search{
-  width: 15rem;
-  display: flex;
+  width: 3rem;
 }
 
 .nav-input input{
-  width:15rem;
+  width:3rem;
 }
 
 .nav-icons{
@@ -340,6 +339,7 @@ header{
 .nav-container{
   flex-wrap: wrap;
   max-width: 90%;
+  margin-left: 2rem;
 }
 
 .nav-menu{
@@ -349,6 +349,7 @@ header{
 
 .nav-logo{
   margin-top: 0.5rem;
+
 }
 
 .menu-mobile{
@@ -363,17 +364,19 @@ header{
 .nav-search{
   width: 55vw;
   height: 1.8rem;
+  margin:0 auto;
 }
 
 .nav-input input{
-  width:80vw;
+  margin-left: 30%;
+  width:40vw;
 }
 
 .nav-icons{
   width: 30vw;
   position: absolute;
-  top:3rem;
-  left: 55%;
+  top:10%;
+  left: 70%;
   padding: 0 1rem 0;
   margin-left: 1.2rem;
   gap:1rem
