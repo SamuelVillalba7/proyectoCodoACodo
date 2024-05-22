@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 70px;
+    font-family: var(--fuente-texto);
   }
   
   .items-related__title {
@@ -15,7 +16,7 @@
     & span {
       height: 100%;
       width: 20px;
-      background-color: red;
+      background-color: #dc143c;
     }
   
     & p {
@@ -53,7 +54,8 @@
     color: white;
     text-align: center;
     padding: 2px 5px 5px 5px;
-    background-color: red;
+    background-color: #dc143c;
+    box-sizing: border-box;
   }
   
   .cart__top-buttons {
@@ -62,6 +64,10 @@
     gap: 15px;
     align-items: center;
     font-size: 1.5rem;
+
+    & .fa-heart{
+      color: #dc143c !important;
+    }
   }
   
   .cart__img-product {
@@ -71,7 +77,7 @@
   }
   
   .cart__price {
-    color: red;
+    color: #dc143c;
   
     & span {
       color: black;

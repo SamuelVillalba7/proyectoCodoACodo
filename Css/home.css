@@ -1,5 +1,5 @@
 :root{
-    --color: crimson;
+    --color:  #dc143c;
     --fuente-titulo: Verdana, Geneva, Tahoma, sans-serif ;
     --fuente-texto:'Montserrat' ;
 }
@@ -10,17 +10,8 @@
     padding: 0;
 }
 
-html {
-    height: unset;
-    width: unset;
-  }
 
-body{
-    background-color: white;
-}
-
-
-.titulo__color{
+.title__colour{
     color: var(--color) ;
     font-family: var(--fuente-texto);
     font-weight: 700;
@@ -30,7 +21,7 @@ body{
 
 }
 
-.container-titulo{
+.container-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,8 +30,7 @@ body{
 
 }
 
-.container-titulo .titulo__h2{
-
+.container-title .title__h2{
     margin: 0;
 }
 
@@ -51,42 +41,42 @@ body{
 }
 
 
-#img-home img{
+#img-home{
     width: 100%;
     height: auto;
     margin: 90px 0px;
 }
 
 
-.boton-container{
+.button-container{
 
 display: flex;
 justify-content: center;
-margin-top: 50px;
 }
 
-.boton__home {    
+.button__home {    
     padding: 16px 48px; 
     font-size: 18px;
     color: white;
-    background-color: crimson;
+    background-color:  #dc143c;
     border: none;
     border-radius: 3px;
+    font-family: var(--fuente-texto);
     
   }
 
-.titulo__h2{
+.title__h2{
     color: black;
     font-size: 36px;
     font-family: var(--fuente-titulo);
     margin-bottom: 100px;
     margin-top: 50px;
 }
-.categorias-container{
+.category-container{
     display: flex;
     justify-content: space-between;
 }
-.categoria{
+.category{
 
     display: flex;
     justify-content: center;
@@ -101,7 +91,7 @@ margin-top: 50px;
 
 }
 
-.categoria img{
+.category img{
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
@@ -110,7 +100,7 @@ margin-top: 50px;
 }
 
 
-.categoria p{
+.category p{
     
     font-family: var(--fuente-texto);
     font-weight: 500;
@@ -120,30 +110,21 @@ margin-top: 50px;
 
 }
 
-.categoria:hover{
+.category:hover{
     background-color: var(--color) ;
     color: white;
     transition: 0.4s;
    
 }
 
-.categoria:hover img{
+.category:hover img{
     filter: invert(100%) sepia(94%) saturate(26%) hue-rotate(263deg) brightness(107%) contrast(104%);
     transition: 0.4s;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-.novedades-container{
+.news-container{
    
     height: 600px;
     display: grid;
@@ -155,7 +136,7 @@ margin-top: 50px;
     "area1 area1 area3 area4"
 
 }
-.item__novedad{
+.item__new{
         background-color: black;
         background-repeat: no-repeat;
         background-size: contain;
@@ -190,7 +171,7 @@ margin-top: 50px;
 }
 
 
-.novedad__texto{
+.new__text{
     color: white;
     width: 70%;
     margin: 30px;
@@ -207,28 +188,23 @@ margin-top: 50px;
  
 
 }
-.novedad__texto .novedad__titulo{
+.new__texto .new__title{
     font-size: 24px;
     font-family: var(--fuente-titulo);
 }
 
 
 
-
-
-
-
-
-
-.servicios-container{
+.services-container{
     margin: 100px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 
-.servicio{
+.service{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -247,7 +223,7 @@ margin-top: 50px;
     }
 }
 
-.servicio__titulo{
+.service__title{
     font-size: 18px;
     margin-bottom: 10px;
 
@@ -272,7 +248,7 @@ margin-top: 50px;
         padding: 5px 0px;
     } */
 
-    .categorias-container{
+    .category-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -283,38 +259,38 @@ margin-top: 50px;
   
     }
 
-    .categoria-grid-1{
+    .category-grid-1{
         grid-area: grid-1 ;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-2{
+    .category-grid-2{
         grid-area: grid-2 ;
         display: flex;
         justify-content: center;
 
     }
 
-    .categoria-grid-3{
+    .category-grid-3{
         grid-area: grid-3 ;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-4{
+    .category-grid-4{
         grid-area: grid-4;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-5{
+    .category-grid-5{
         grid-area: grid-5;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-6{
+    .category-grid-6{
         grid-area: grid-6;
         display: flex;
         justify-content: center;
@@ -323,7 +299,7 @@ margin-top: 50px;
 
 
 
-    .novedades-container{
+    .news-container{
    
         height: 700px;
        
@@ -338,45 +314,39 @@ margin-top: 50px;
         "area3 area3 area4 area4"
     
     }
-
-
-
-
-    .novedad__texto{
-
+    .new__text{
         margin: 5px 10px;
         width: unset;
-
     }
     
-    .item_1 .novedad__texto{
+    .item_1 .new__text{
         width: 70%;
     }
-    .item_2 .novedad__texto{
+    .item_2 .new__text{
         width: 50%;
     }
 
-    .novedad__texto .novedad__titulo{
+    .new__text .new__title{
         font-size: 18px; 
         margin-bottom: 5px;
     }
 
-    .novedad__texto p {
+    .new__text p {
         margin-bottom: 5px;
     }
     
-    .servicios-container{
+    .services-container{
         margin: 10px;
         margin-top: 50px;
     }
 
-    .servicio{
+    .service{
         height: 233px;
         justify-content: space-between;
     }
     
 
-    .servicio img{
+    .service img{
         width: 70px;
     
     } 
@@ -394,22 +364,21 @@ margin-top: 50px;
 
   @media only screen and (width <= 767px){
     
-    html {
-        min-width: unset;
-      }
-    
-
-
     #main-home{
         padding: 20px;
     }
+    #img-home{
+        visibility: hidden;
+        width: 0px;
+        margin:0px;
+    }
 
-    .container-titulo .boton__home{
+    .container-title .button__home{
        
         padding: 5px 0px;
     }
 
-    .categorias-container{
+    .category-container{
      
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -423,55 +392,51 @@ margin-top: 50px;
         
     }
     
-    .categoria{
+    .category{
         width: 100%;
     }
 
-    .categoria-grid-1{
+    .category-grid-1{
         grid-area: grid-1 ;
         display: flex;
         justify-content: center;
 
 
     }
-    .categoria-grid-2{
+    .category-grid-2{
         grid-area: grid-2 ;
         display: flex;
         justify-content: center;
 
     }
 
-    .categoria-grid-3{
+    .category-grid-3{
         grid-area: grid-3 ;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-4{
+    .category-grid-4{
         grid-area: grid-4;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-5{
+    .category-grid-5{
         grid-area: grid-5;
         display: flex;
         justify-content: center;
 
     }
-    .categoria-grid-6{
+    .category-grid-6{
         grid-area: grid-6;
         display: flex;
         justify-content: center;
     }
 
-
- 
-
-    .novedades-container{
+    .news-container{
    
-        height: 700px;
-       
+        height: 700px;    
         display: grid;
         grid-template-rows: 1fr 1fr 1.2fr 1.3fr;
         grid-template-columns:1fr 1fr 1fr 1fr;
@@ -484,65 +449,51 @@ margin-top: 50px;
     
     }
 
-
-
-
-    .novedad__texto{
-
+    .new_text{
         margin: 5px 10px;
         width: unset;
-
     }
     
-    .item_1 .novedad__texto{
+    .item_1 .new__text{
         width: 70%;
     }
-    .item_2 .novedad__texto{
+    .item_2 .new__text{
         width: 50%;
     }
 
-    .novedad__texto .novedad__titulo{
+    .new__text .new__title{
         font-size: 18px; 
         margin-bottom: 5px;
     }
 
-    .novedad__texto p {
+    .new__text p {
         margin-bottom: 5px;
     }
-    
 
-
-
-
-    
-    .servicios-container{
+    .services-container{
         margin: 10px;
         margin-top: 50px;
     }
 
-    .servicio{
+    .service{
         height: 233px;
         justify-content: space-between;
 
     }
 
-    .servicio img{
+    .service img{
         width: 70px;
     
     } 
    
-    .titulo__h2{
+    .title__h2{
         font-size: 24px;
         margin-bottom: 40px;
     }
 
-
-
-
     .cart__top{
         flex-direction: row;
     }
-
 
     .items-related{
         height: auto;
