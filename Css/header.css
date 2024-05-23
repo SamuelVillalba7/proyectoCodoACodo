@@ -218,7 +218,7 @@ aside{
 }
 
 .menu-section-img{
-  width:38vw;
+  width:32vw;
   position: absolute;
   bottom: 2rem;
   left: 30%;
@@ -226,7 +226,7 @@ aside{
 }
 
 .menu-section-img img{
-  width: 26rem;
+  width: 22rem;
 } 
 
 .menu-section-tittle{
@@ -410,7 +410,7 @@ header{
 }
 
 aside{
-  width: 78vw;
+  width: 79vw;
   display: flex;
   flex-flow: column wrap;
   align-items: start;
@@ -421,22 +421,22 @@ aside{
 
 .menu-section-subtittle{
   height: 2rem;
-  margin-top:6rem;
+  margin:0 auto;
   padding-bottom:20rem ;
 }
 
 .menu-section-img{
-  top: 25rem;
   left: 29vw;
   top:20rem;
+  width: 70%;
 }
 .menu-section-img img{
-  width: 45vw;
+  width: inherit;
 }
 
 .menu-section-tittle{
   top: 2rem;
-  right:40%;
+  right:45%;
   font-size: 1.8rem;
   width: 18rem;
 }
@@ -530,13 +530,13 @@ header{
 }
 
 aside{
-  width: 78vw;
+  width: 85vw;
   display: flex;
   flex-flow: column wrap;
   align-items: start;
   justify-content: center;
-  margin: 0 0 4.37rem 1rem;
-  padding: 1rem 0 0 1rem;
+  margin: 0 0 4.37rem 0;
+  padding: 1rem 0 0 2rem;
 }
 
 .menu-section-subtittle{
@@ -546,20 +546,21 @@ aside{
 }
 
 .menu-section-img{
-  top: 28rem;
+  top: 25rem;
   left: auto;
   right: auto;
+  width: 80%;
 }
 .menu-section-img img{
-  width: 60vw;
+  width: inherit;
   height:auto;
 }
 
 .menu-section-tittle{
-  top: -5.5rem;
-  right:65%;
   font-size: 1.4rem;
-  width: 18rem;
+  width: 17rem;
+  margin-bottom: 10rem;
+  right: 55vw;
 }
 
 #section-mejores-productos{
