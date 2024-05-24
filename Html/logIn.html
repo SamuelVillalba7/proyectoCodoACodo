@@ -10,14 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <!--CSS-->
-    <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="../Css/footer.css">
-    <link rel="stylesheet" href="../Css/header.css">
-    <link rel="stylesheet" href="../Css/home.css">
-    <link rel="stylesheet" href="../Css/login.css">
+    <link rel="stylesheet" href="../Css/normalize.css"/>
+    <link rel="stylesheet" href="../Css/footer.css"/>
+    <link rel="stylesheet" href="../Css/header.css"/>
+    <link rel="stylesheet" href="../Css/logIn.css">
 
 <!-- SHORTCUT ICON -->
-<link rel="shortcut icon" type="image/x-icon" href="../Assets/Img/signUp/favicon.ico">   
+<link rel="shortcut icon" type="image/x-icon" href="../Assets/Img/signUp/favicon.ico">  
 
 <!--FONT AWESOME-->
 <script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
@@ -26,112 +25,87 @@
 </head>
 
 <body>
-      <header>
+    <header>
         <nav class="nav-container">
-            <div class="menu-mobile">
-                <a href="#" title="Menu">
-                  <i class="fa-solid fa-bars" id="clickMe"></i>
-                </a>
-              </div>
+          <div class="menu-mobile">
+            <a href="#" title="Menu">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
           <div class="nav-menu">
               <div class="nav-logo">
-                  <span>Exclusive</span>
+                <span>Exclusive</span>
               </div>
               <div class="nav-section">
-                  <a href="../index.html">Home</a>
-                  <a href="#">Contact</a>
-                  <a href="#">About</a>
-                  <a href="../Html/signUp.html">Sign Up</a>
+                <a href="../index.html">Home</a>
+                <a href="./error.html">Contact</a>
+                <a href="./error.html">About</a>
+                  <a href="./signUp.html">Sign Up</a>
               </div>
           </div>
           <div class="nav-search">
               <div class="nav-input">
-                  <input type="search" name="" id="" placeholder="Buscar...">
+                <input type="search" name="" id="" placeholder="Search...">
               </div>
               <div class="nav-icons">
                 <a href="#" title="like">
-                    <i class="fa-regular fa-heart fa-xl"></i>
-                  </a>
-                  <a href="./Html/cart.html" title="cart">
-                    <i class="cart-icon"></i>
-                  </a>
-                  <a href="./Html/logIn.html" class="logIn-icon" title="Log In">
-                    <i class="fa-regular fa-user fa-xl"></i>
-                  </a>
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                </a>
+                <a href="./cart.html" title="cart">
+                  <i class="cart-icon"></i>
+                </a>
+                <a href="./logIn.html" class="logIn-icon" title="Log In">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                </a>
               </div>
           </div>
         </nav>
-      </header>
-
-              <!-- Meli----Seccion de menú acordeon --> 
-      <!--<main id="main-home">  
-        <section class="menu-section-container">
-          <div class="menu-section-accordeon"> 
-            <div>
-              <a href="#">Home</a>
-            </div>
-            <div>
-              <a href="#">Contact</a>
-            </div>
-            <div>
-              <a href="#">About</a>
-            </div>
-            <div>
-              <a href="#">Quick Link</a>
-            </div>
-            <div>
-              <a href="#">DownLoad App</a>
-            </div>
-          </div>
-        </section>
-    </main>
--->
+      </header> 
 
 <!-- MAIN LOGIN -->
 
 <div class="main-login-container">
     <main class="main-login-box">
         <img class="main-login-img" src="../Assets/Img/signUp/create-account-img.png"  alt="imagen-login">
-        <div class="main-item-box">
-            <div class="main-item">
+        <article class="main-item-box">
+            <section class="main-item">
             <h2>Log in to Exclusive</h2>
             <br>
-            <p class="observation">Enter your details below</p>
-            <!-- <br> -->
-            </div>
+            <p class="observation">Enter your user data below</p>
+            </section>
             <form id="loginForm">
-           
-            <div class="form-item">
-                <!-- <label for="email"><strong>Email:</strong></label> -->
-                <input type="email" id="email" name="email" placeholder="email" required>
-            </div>
-            <br>
-            <div class="form-item">
-                <!-- <label for="password"><strong>Password:</strong></label> -->
-                <input type="password" id="password" name="password" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
-            </div>
-            <br>
-           <div class="login-footer">
-                <div class="submit">
-                    <input class="" type="submit" value="Log In">
+                <div class="form-item">
+                    <!-- <label for="email"><strong>Email:</strong></label> -->
+                    <input type="email" id="email" name="email" placeholder="email*" required>
                 </div>
-            
-        
-            <br>
-            <div class="main-item-box-footer">
-                <p ><a class="login-a" href="../Html/recovery_password.html" target="_blank">Forget Password?</a></p>
-            </div>
-            </div>
-            <div class="login-footer-rememberme">
-                <label class="checkbox-remenberme">
-                    <input class="chek-box" type="checkbox" name="remember-me"> Remenber me
-                </label>
-            </div>
-            
-        </form>
-        </div>
+                <br>
+                <div class="form-item">
+                    <!-- <label for="password"><strong>Password:</strong></label> -->
+                <input type="password" id="password" name="password" placeholder="password*" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{11,}$" required>
+                </div>
+                <br>
+                <div class="login-footer">
+                    <div class="submit">
+                        <input class="login-submit" type="submit" value="Log In">
+                    </div>
+                    <br>
+                    <div class="main-item-box-footer">
+                        <p ><a class="login-a" href="../Html/recovery_password.html" target="_blank" title="¿Olvidaste tu contraseña?">Forget Password?</a></p>
+                    </div>
+                </div>
+                <div class="login-footer-rememberme">
+                    <label class="checkbox-remenberme">
+                        <input class="chek-box" type="checkbox" name="remember-me"> Remenber me
+                    </label>
+                </div>
+            </form>
+        </article>
     </main>
 </div>
+
+<!-- END MAIN LOGIN -->
+
+<!-- LOGIN SCRIPT -->
 
 <script>
     document.getElementById("loginForm").addEventListener("submit", function(event) {
@@ -148,12 +122,10 @@
     });
 </script>
 
+<!-- END LOGIN SCRIPT -->
 
-<script src="login.js"></script>
 
-<!-- END MAIN LOGIN -->
-
-<footer id="foo-contain">
+<footer>
     <div class="footer-container">
       <div class="foo-section">
           <div class="foo-brand" >
@@ -170,10 +142,9 @@
               </div>
           </div>
       </div>
-      <div class="foo-section section-mobile">
-        <div class="foo-title">
-            <span>Support</span>
-            <i class="fa-solid fa-chevron-down"></i>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Support</span>
           </div>
           <div class="foo-subtitle">
               <span>Street 0000,City</span>
@@ -182,10 +153,9 @@
               <span><a href="https://wa.me/+5491112345678">9+54 000 0000000</a> </span>
           </div>
       </div>
-      <div class="foo-section section-mobile">
+      <div class="foo-section">
           <div class="foo-title">
               <span>Account</span>
-              <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="foo-subtitle">
               <a href="./account.html">My Account</a>
@@ -194,65 +164,66 @@
               <a href="./error.html">Wishlist</a>
               <a href="./product.html">Shop</a>
           </div>
-          </div>    
-      <div class="foo-section section-mobile">
+          </div>
+      <div class="foo-section">
           <div class="foo-title">
               <span>Quick Link</span>
-              <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="foo-subtitle">
               <a href="../Assets/Img/signUp/politica_de_privacidad.pdf" title="Abrir Política de Privacidad en una nueva pestaña">Privacy Policy</a>
-            <a href="../Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
+              <a href="../Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
               <a href="./error.html">FAQ</a>
               <a href="./error.html">Contact</a>
           </div>
+      </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Download App</span>
           </div>
-      <div class="foo-section section-mobile">
-        <div class="foo-title">
-            <span>Download App</span>
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <div class=" content-media">
           <div id="foo-comments">
-            <span>Save $3000 with App New User Only</span>
+              <span>Save $3000 with App New User Only</span>
           </div>
           <div class="foo-platform-digital">
               <div>
-                  <a href="#">
+                  <a href="">
                       <img src="../Assets/Img/footer/img-QR-Code.png" alt="QR Code">
                   </a>
               </div>  
               <div>
-                <a href="" title="app store">
-                    <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-Google-Play.png" alt="">
-                </a>
-                <a href="" title="app store">
-                    <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-App-Store.png" alt="">
-                </a>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-Google-Play.png" alt="">
+                  </a>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-App-Store.png" alt="">
+                  </a>
               </div>
-            </div>
-            <div class="foo-social-media">
-              <a href="">
+          </div>
+          <div class="foo-social-media">
+              <a href="https://facebook.com/exclusive" target="_blank"
+              rel="noopener" title="social media">
                   <i class="fa-brands fa-facebook-f fa-xl"></i>
               </a>
-              <a href="">
+              <a href="https://twitter.com/exclusive"
+              target="_blank"
+              rel="noopener" title="social media">
                   <i class="fa-brands fa-twitter fa-xl"></i>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/exclusive/?hl=es-la"
+              target="_blank"
+              rel="noopener" title="social media">
                   <i class="fa-brands fa-instagram fa-xl"></i>
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/company/exclusive-techstore"  target="_blank"
+              rel="noopener" title="social media">
                   <i class="fa-brands fa-linkedin-in fa-xl"></i>
               </a>
-            </div>
           </div>
       </div>
   </div>
   <div class="foo-copyright">
-      <span>&copy; Copyright 2024. All right reserved</span>
+      <span>&copy; Copyright 2024. <strong>Exclusive</strong> All right reserved</span>
   </div>
   </footer>
-  <!--JAVASCRIPT-->
-  <script src="../Js/index.js"></script>
+
 </body>
 </html>
