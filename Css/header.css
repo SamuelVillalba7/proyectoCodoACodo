@@ -173,7 +173,6 @@ a{
   flex-flow: row wrap;
   height: 24rem;
   width: 85vw;
-  width: 85vw;
 }
 
 .menu-section-accordeon{
@@ -228,8 +227,7 @@ aside{
 }
 
 .menu-section-img img{
-  width: 24rem;
-  margin: 0;
+  width: 22rem;
 } 
 
 .menu-section-tittle{
