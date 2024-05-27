@@ -28,7 +28,7 @@
         <nav class="nav-container">
           <div class="menu-mobile">
             <a href="#">
-              <i class="fa-solid fa-bars" id="clickMe"></i>
+              <i class="fa-solid fa-bars" id="clickMe" title="Menu"></i>
             </a>
           </div>
           <div class="nav-menu">
@@ -36,10 +36,10 @@
                 <span>Exclusive</span>
               </div>
               <div class="nav-section">
-                  <a href="#">Home</a>
-                  <a href="#">Contact</a>
-                  <a href="#">About</a>
-                  <a href="./Html/signUp.html">Sign Up</a>
+                  <a href="#" title="Home">Home</a>
+                  <a href="./Html/error.html" title="Contact">Contact</a>
+                  <a href="./Html/error.html" title="About">About</a>
+                  <a href="./Html/signUp.html" title="Sign Up">Sign Up</a>
               </div>
           </div>
           <div class="nav-search">
@@ -47,13 +47,13 @@
                 <input type="search" name="" id="" placeholder="Search...">
               </div>
               <div class="nav-icons">
-                <a href="#">
-                  <i class="fa-regular fa-heart fa-xl"></i>
+                <a href="./Html/error.html" title="WishList">
+                  <i class="fa-regular fa-heart fa-xl wishList"></i>
                 </a>
-                <a href="./Html/cart.html">
+                <a href="./Html/cart.html" title="Cart">
                   <i class="cart-icon"></i>
                 </a>
-                <a href="./Html/logIn.html" class="logIn-icon">
+                <a href="./Html/logIn.html" class="logIn-icon" title="LogIn ">
                   <i class="fa-regular fa-user fa-xl"></i>
                 </a>
               </div>
@@ -67,19 +67,19 @@
         <section class="menu-section-container">
           <div class="menu-section-accordeon"> 
             <div>
-              <a href="#">Home</a>
+              <a href="./Html/error.html" title="Home">Home</a>
             </div>
             <div>
-              <a href="#">Contact</a>
+              <a href="./Html/error.html" title="Contact">Contact</a>
             </div>
             <div>
-              <a href="#">About</a>
+              <a href="./Html/error.html" title="About">About</a>
             </div>
             <div>
-              <a href="#">Quick Link</a>
+              <a href="./Html/error.html" title="Quick Link">Quick Link</a>
             </div>
             <div>
-              <a href="#">DownLoad App</a>
+              <a href="./Html/error.html" title="DownLoad App">DownLoad App</a>
             </div>
           </div>
           <div class="menu-section-divider"></div>
@@ -90,9 +90,6 @@
             </div>
             <div class="menu-section-img">
               <img src="./Assets/Img/principal main/imageHeader.png" alt="Imagen de cabecera">
-            </div>
-            <div class="menu-section-tittle">
-              <h3>Up to 10% off Voucher</h3>  
             </div>
             <div class="menu-section-tittle">
               <h3>Up to 10% off Voucher</h3>  
@@ -620,7 +617,7 @@
                 <span class="foo-name-brand">Exclusive</span>
             </div>
             <div>
-                <a href="" class="foo-subtitle foo-subtitle-mobile">About Us</a>
+                <a href="#" class="foo-subtitle foo-subtitle-mobile" title="About Us">About Us</a>
             </div>
             <div>
                 <label for="mail" class="foo-subtitle">Newsletter</label>
@@ -638,8 +635,8 @@
             <div class="foo-subtitle">
                 <span>Street 0000,City</span>
                 <span>Zip 0000, Country</span>
-                <span>exclusive@mail.com</span>
-                <span>9+54 000 0000000 </span>
+                <span><a href="mailto:exclusive@mail.com">exclusive@mail.com</a></span>
+                <span><a href="https://wa.me/+5491112345678">9+54 000 0000000</a> </span>
             </div>
         </div>
         <div class="foo-section section-mobile">
@@ -648,11 +645,11 @@
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="foo-subtitle">
-                <a href="">My Account</a>
-                <a href="">Login/Register</a>
-                <a href="">Cart</a>
-                <a href="">Wishlist</a>
-                <a href="">Shop</a>
+                <a href="./Html/account.html" title="My Account">My Account</a>
+                <a href="./Html/logIn.html" title="Login/Register">Login/Register</a>
+                <a href="./Html/cart.html" title="Cart">Cart</a>
+                <a href="./Html/error.html"title="WishList">Wishlist</a>
+                <a href="./Html/product.html" title="Shop">Shop</a>
             </div>
             </div>
         <div class="foo-section section-mobile">
@@ -661,10 +658,10 @@
                 <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="foo-subtitle">
-                <a href="">Privacy Policy</a>
-                <a href="">Terms of Use</a>
-                <a href="">FAQ</a>
-                <a href="">Contact</a>
+                <a href="./Assets/Img/signUp/politica_de_privacidad.pdf" title="Abrir Política de Privacidad en una nueva pestaña">Privacy Policy</a>
+                <a href="./Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
+                <a href="./Html/error.html" title="FAQ">FAQ</a>
+                <a href="./Html/error.html" title="Contact">Contact</a>
             </div>
         </div>
         <div class="foo-section section-mobile">
@@ -679,29 +676,29 @@
               <div class="foo-platform-digital">
                 <div>
                     <a href="">
-                        <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code">
+                        <img src="./Assets/Img/footer/img-QR-Code.png" alt="QR Code" title="QR Code">
                     </a>
                 </div>  
                 <div>
                     <a href="">
-                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-Google-Play.png" alt="">
+                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-Google-Play.png" alt="Google Play" title="Google Play">
                     </a>
                     <a href="">
-                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-App-Store.png" alt="">
+                        <img class="foo-platform-digital-img"src="./Assets/Img/footer/img-App-Store.png" alt="App Store" title="App Store">
                     </a>
                 </div>
               </div>
               <div class="foo-social-media">
-                <a href="">
+                <a href="https://facebook.com/exclusive" target="_blank"rel="noopener" title="Facebook">
                     <i class="fa-brands fa-facebook-f fa-xl"></i>
                 </a>
-                <a href="">
+                <a href="https://twitter.com/exclusive"target="_blank"rel="noopener" title="Twitter">
                     <i class="fa-brands fa-twitter fa-xl"></i>
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/exclusive/?hl=es-la"target="_blank" rel="noopener" title="Instagram">
                     <i class="fa-brands fa-instagram fa-xl"></i>
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/company/exclusive-techstore"  target="_blank"rel="noopener" title="Linkedin">
                     <i class="fa-brands fa-linkedin-in fa-xl"></i>
                 </a>
               </div>
