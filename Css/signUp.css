@@ -8,7 +8,7 @@ body {
 .main-login-container {
     /* overflow: auto; */
     max-width: 90vw;
-    height: 80vh;
+    height: auto;
     margin: 1.1em auto;
     background-color: rgb(237, 237, 237);
     border-radius: 0.33em;
@@ -96,7 +96,7 @@ body {
     .main-login-container {
         
         max-width: 97vw;
-        height: 85vh;
+        height: auto;
         margin: 3em auto;
         background-color: rgb(237, 237, 237);
         border-radius: 0.33em;
@@ -208,8 +208,8 @@ input[type="submit"]:hover {
     font-size: 0.76em;
 }
 
-.terminos-y-condiciones, .ofertas-y-novedades {
-    margin-bottom: 1.37em;
+.terminos-y-condiciones, .ofertas-y-novedades, .politica-de-privacidad {
+    margin-bottom: 0.37em;
     font-size: 0.76em;
 }
 
@@ -235,6 +235,17 @@ input[type="submit"]:hover {
      
 }
 
+#politica_privacidad {
+    color: red;
+    font-style: bold; 
+    margin-left: 0.4em !important; 
+}
+
+#politica_privacidad:hover {
+       transform: scale(1.05);
+       text-decoration: underline;
+     
+}
 
 .error {
     color: red;

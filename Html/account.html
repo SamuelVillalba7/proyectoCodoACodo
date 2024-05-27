@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--CSS-->
+    <link rel="stylesheet" href="../Css/normalize.css"/>
+    <link rel="stylesheet" href="../Css/footer.css"/>
+    <link rel="stylesheet" href="../Css/header.css"/>
+    <link rel="stylesheet" href="../Css/account.css">
+
+<!-- SHORTCUT ICON -->
+<link rel="shortcut icon" type="image/x-icon" href="../Assets/Img/signUp/favicon.ico"> 
+
+<!--FONT AWESOME-->
+<script src="https://kit.fontawesome.com/a291c56e45.js" crossorigin="anonymous"></script>
+
+<title>account</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+          <div class="menu-mobile">
+            <a href="#" title="Menu">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <div class="nav-menu">
+              <div class="nav-logo">
+                <span>Exclusive</span>
+              </div>
+              <div class="nav-section">
+                <a href="../index.html">Home</a>
+                <a href="./error.html">Contact</a>
+                <a href="./error.html">About</a>
+                  <a href="./signUp.html">Sign Up</a>
+              </div>
+          </div>
+          <div class="nav-search">
+              <div class="nav-input">
+                <input type="search" name="" id="" placeholder="Search...">
+              </div>
+              <div class="nav-icons">
+                <a href="#" title="like">
+                  <i class="fa-regular fa-heart fa-xl"></i>
+                </a>
+                <a href="./cart.html" title="cart">
+                  <i class="cart-icon"></i>
+                </a>
+                <a href="./logIn.html" class="logIn-icon" title="Log In">
+                  <i class="fa-regular fa-user fa-xl"></i>
+                </a>
+              </div>
+          </div>
+        </nav>
+      </header> 
+
+<!-- MAIN ACCOUNT -->
+
+<div class="account-container">
+    <nav class="account-header-nav">
+        <p>Home / <strong>My Account</strong></p>
+        <p>Welcome! <span class="username-span">Username</span></p>
+    </nav>
+    <main id="account-main">
+        <aside class="account-aside-menu">
+            <div class="account-aside-menu-box">
+                <section class="aside-profile">
+                    <div>
+                        <img id="profile-img" src="../Assets/Img/signUp/foto perfil default.png" alt="Foto de perfil"><br>
+                        <span>edite su foto de perfil</span><br>
+                    </div>
+                    <br>
+                    <div id="profile-img-input">
+                        <label for="file-input"></label>
+                        <input type="file" id="file-input" accept="image/*" placeholder="su foto de perfil">
+                        
+                    </div>    
+                </section>
+                <section class="aside-info">
+                    <ul class="aside-info-ul">
+                        <li class="info-item">
+                            <span class="info-title">Username: </span>
+                            <span class="info-value" id="username">Username</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Email: </span>
+                            <span class="info-value" id="userEmail">Email</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Date of Birth: </span>
+                            <span class="info-value" id="userDob">Date of Birth</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Age: </span>
+                            <span class="info-value" id="userAge">Age</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Gender: </span>
+                            <span class="info-value">Gender</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Address: </span>
+                            <span class="info-value" id="userAddress">Address</span>
+                        </li>
+                        <li class="info-item">
+                            <span class="info-title">Country: </span>
+                            <span class="info-value">Country</span>
+                        </li>
+                    </ul>
+                </section>
+
+                
+            </div>
+        </aside>
+        
+        <article class="account-article-section">
+            <div class="account-section-box">
+                <h2 class="account-header">Edit Your Profile</h2>
+                <form id="account-form-personalInfo" class="account-form-personalInfo" action="">
+                    <section class="form-container">
+                        <div class="form-box">
+                            <div class="form-item" >
+                                <label class="form-label" for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="your first name">
+                            </div>
+                            <div class="form-item" >
+                                <label class="form-label" for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="your last name">
+                            </div>
+                        </div>
+                        <div class="form-box">    
+                            <div class="form-item">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" placeholder="tumail@gmail.com">
+                            </div>
+                            <div class="form-item" >
+                                <label class="form-label" for="address">Address</label>
+                                <input type="text" id="address" placeholder="state/city/street">
+                            </div>
+                        </div>    
+                    </section>
+                    <section class="form-container">
+                        <div class="form-box">  
+                            <div class="form-item">
+                                <label class="form-label" for="dob">Date of Birth</label>
+                                <input type="date" id="dob">
+                            </div>
+                            <div class="form-item">
+                                <label class="form-label" for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                <!-- Agregar más opciones de países según sea necesario -->
+                                </select>
+                            </div>
+                        </div>
+                        <div id="form-gender" class="form-box">
+                            <div class="form-item">
+                                <label class="form-label">Gender</label>
+                                <div class="radio-options">
+                                    <input type="radio" id="male" name="gender" value="Male">
+                                    <label for="male" id="male-label">Male</label><br>
+                                    <input type="radio" id="female" name="gender" value="Female">
+                                    <label for="female" id="female-label">Female</label><br>
+                                    <input type="radio" id="other" name="gender" value="Other">
+                                    <label for="other" id="other-label">Other</label><br>
+                                    <input type="radio" id="preferNotToSay" name="gender" value="Prefer Not To Say">
+                                    <label for="preferNotToSay" id="preferNotToSay-label">Prefer Not To Say</label>
+                                </div>
+                            </div>    
+                        </div>
+                    </section>
+                    <section class="form-container">
+                        <div id="form-changes-pssword" class="form-box">
+                            <div class="form-item">
+                                <label class="form-label" for="">Password Changes</label>
+                                <input type="password" id="currentPassword" placeholder="Current Password">
+                                <input type="password" id="newPassword" placeholder="New Password">
+                                <input type="password" id="confirmNewPassword" placeholder="Confirm New Password">
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <div class="form-footer">
+                        <div class="submit">
+                            <input class="" type="submit" value="Cancel">
+                        </div>
+                        <div class="submit">
+                            <input class="" type="submit" value="Save Changes">
+                        </div>
+                    </div>    
+                </form>
+
+            </div>
+        </article>
+    </main>
+</div>
+
+
+<!-- END MAIN ACCOUNT -->
+
+<!-- SCRIPT ACCOUNT -->
+
+<script>
+
+// CAMBIAR FOTO DE PERFIL
+
+    // Obtener referencia al input de archivo
+const fileInput = document.getElementById('file-input');
+
+// Obtener referencia a la imagen de perfil
+const profileImg = document.getElementById('profile-img');
+
+// Escuchar cambios en el input de archivo
+fileInput.addEventListener('change', function(event) {
+  const file = event.target.files[0];
+
+  // Verificar si se seleccionó un archivo
+  if (file) {
+    // Crear objeto URL para la imagen seleccionada
+    const imgUrl = URL.createObjectURL(file);
+
+    // Asignar la URL de la imagen seleccionada como fuente de la imagen de perfil
+    profileImg.src = imgUrl;
+  }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener referencias a los campos del formulario
+    const firstNameInput = document.getElementById('firstName');
+    const lastNameInput = document.getElementById('lastName');
+    const emailInput = document.getElementById('email');
+    const addressInput = document.getElementById('address');
+    const ageInput = document.getElementById('age');
+    const genderInputs = document.querySelectorAll('input[name="gender"]');
+    const countrySelect = document.getElementById('country');
+    const birthDateInput = document.getElementById('dob'); // Cambiado a 'dob'
+
+    // Obtener referencias a los elementos del aside
+    const usernameAside = document.getElementById('username');
+    const userEmailAside = document.getElementById('userEmail');
+    const userAddressAside = document.getElementById('userAddress');
+    const userAgeAside = document.getElementById('userAge');
+    const userGenderAside = document.getElementById('userGender');
+    const userCountryAside = document.getElementById('userCountry');
+    const userBirthDateAside = document.getElementById('userDob'); // Cambiado a 'userDob'
+
+    // Función para calcular la edad a partir de la fecha de nacimiento
+    function calculateAge(birthDate) {
+        const today = new Date();
+        const dob = new Date(birthDate);
+        let age = today.getFullYear() - dob.getFullYear();
+        const month = today.getMonth() - dob.getMonth();
+        if (month < 0 || (month === 0 && today.getDate() < dob.getDate())) {
+            age--;
+        }
+        return age;
+    }
+
+    // Función para actualizar los valores en el aside
+    function updateAsideInfo() {
+        // Obtener los valores ingresados por el usuario
+        const firstName = firstNameInput.value;
+        const lastName = lastNameInput.value;
+        const email = emailInput.value;
+        const address = addressInput.value;
+        const birthDate = birthDateInput.value;
+        const age = calculateAge(birthDate); // Calcular la edad
+
+        // Obtener el valor del género seleccionado
+        let gender = '';
+        genderInputs.forEach(input => {
+            if (input.checked) {
+                gender = input.value;
+            }
+        });
+
+        // Obtener el valor del país seleccionado
+        const country = countrySelect.value;
+
+        // Actualizar los elementos de info en el aside
+        usernameAside.textContent = firstName + ' ' + lastName;
+        userEmailAside.textContent = email;
+        userAddressAside.textContent = address;
+        userAgeAside.textContent = age; // Mostrar la edad calculada
+        userBirthDateAside.textContent = birthDate;
+        userGenderAside.textContent = gender;
+        userCountryAside.textContent = country;
+    }
+
+    // Escuchar cambios en los campos del formulario y actualizar el aside
+    firstNameInput.addEventListener('input', updateAsideInfo);
+    lastNameInput.addEventListener('input', updateAsideInfo);
+    emailInput.addEventListener('input', updateAsideInfo);
+    addressInput.addEventListener('input', updateAsideInfo);
+    birthDateInput.addEventListener('input', updateAsideInfo); // Escuchar cambios en la fecha de nacimiento
+    genderInputs.forEach(input => input.addEventListener('change', updateAsideInfo));
+    countrySelect.addEventListener('change', updateAsideInfo);
+});
+
+
+</script>
+
+<!-- END SCRIPT ACCOUNT -->
+
+
+
+<footer>
+    <div class="footer-container">
+      <div class="foo-section">
+          <div class="foo-brand" >
+              <span class="foo-name-brand">Exclusive</span>
+          </div>
+          <div>
+              <a href="" class="foo-subtitle foo-subtitle-mobile">About Us</a>
+          </div>
+          <div>
+              <label for="mail" class="foo-subtitle">Newsletter</label>
+              <div class="subscribe-container">
+                  <input type="email" name="mail" id="mail" value="default@example.com">
+                  <button type="submit">Subscribe</button>
+              </div>
+          </div>
+      </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Support</span>
+          </div>
+          <div class="foo-subtitle">
+              <span>Street 0000,City</span>
+              <span>Zip 0000, Country</span>
+              <span><a href="mailto:exclusive@mail.com">exclusive@mail.com</a></span>
+              <span><a href="https://wa.me/+5491112345678">9+54 000 0000000</a> </span>
+          </div>
+      </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Account</span>
+          </div>
+          <div class="foo-subtitle">
+              <a href="./account.html">My Account</a>
+              <a href="./logIn.html">Login/Register</a>
+              <a href="./cart.html">Cart</a>
+              <a href="./error.html">Wishlist</a>
+              <a href="./product.html">Shop</a>
+          </div>
+          </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Quick Link</span>
+          </div>
+          <div class="foo-subtitle">
+              <a href="../Assets/Img/signUp/politica_de_privacidad.pdf" title="Abrir Política de Privacidad en una nueva pestaña">Privacy Policy</a>
+              <a href="../Assets/Img/signUp/terminos_y_condiciones.pdf" title="Abrir Términos y Condiciones en una nueva pestaña">Terms of Use</a>
+              <a href="./error.html">FAQ</a>
+              <a href="./error.html">Contact</a>
+          </div>
+      </div>
+      <div class="foo-section">
+          <div class="foo-title">
+              <span>Download App</span>
+          </div>
+          <div id="foo-comments">
+              <span>Save $3000 with App New User Only</span>
+          </div>
+          <div class="foo-platform-digital">
+              <div>
+                  <a href="">
+                      <img src="../Assets/Img/footer/img-QR-Code.png" alt="QR Code">
+                  </a>
+              </div>  
+              <div>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-Google-Play.png" alt="">
+                  </a>
+                  <a href="" title="app store">
+                      <img class="foo-platform-digital-img"src="../Assets/Img/footer/img-App-Store.png" alt="">
+                  </a>
+              </div>
+          </div>
+          <div class="foo-social-media">
+              <a href="https://facebook.com/exclusive" target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </a>
+              <a href="https://twitter.com/exclusive"
+              target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+              </a>
+              <a href="https://www.instagram.com/exclusive/?hl=es-la"
+              target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/exclusive-techstore"  target="_blank"
+              rel="noopener" title="social media">
+                  <i class="fa-brands fa-linkedin-in fa-xl"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="foo-copyright">
+      <span>&copy; Copyright 2024. <strong>Exclusive</strong> All right reserved</span>
+  </div>
+  </footer>
+
+
+
+</body>
+</html>
+

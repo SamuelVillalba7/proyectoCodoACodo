@@ -24,7 +24,9 @@
     <header>
       <nav class="nav-container">
         <div class="menu-mobile">
-          <i class="fa-solid fa-bars"></i>
+          <a href="#">
+            <i class="fa-solid fa-bars" id="clickMe"></i>
+          </a>
         </div>
         <div class="nav-menu">
           <div class="nav-logo">
@@ -34,16 +36,23 @@
             <a href="../index.html">Home</a>
             <a href="#">Contact</a>
             <a href="#">About</a>
-            <a href="#">Sign Up</a>
+            <a href="./signUp.html">Sign Up</a>
           </div>
         </div>
         <div class="nav-search">
           <div class="nav-input">
-            <input type="search" name="" id="" placeholder="Buscar..." />
+            <input type="search" name="" id="" placeholder="Search..." />
           </div>
           <div class="nav-icons">
-            <i class="fa-regular fa-heart fa-xl"></i>
-            <i class="fa-solid fa-cart-shopping fa-xl"></i>
+            <a href="#">
+              <i class="fa-regular fa-heart fa-xl"></i>
+            </a>
+            <a href="./cart.html">
+              <i class="cart-icon"></i>
+            </a>
+            <a href="./logIn.html" class="logIn-icon">
+              <i class="fa-regular fa-user fa-xl"></i>
+            </a>
           </div>
         </div>
       </nav>
@@ -129,14 +138,14 @@
                   Comprar
                 </button>
                 <span class="buttons__favorite">
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart heart"></i>
                 </span>
               </div>
             </section>
 
             <section class="information__shipment">
               <div>
-                <i class="fa-solid fa-truck" style="color: #1e3050"></i>
+                <i class="fa-solid fa-truck truck"></i>
                 <ul>
                   <li>Envio gratis</li>
                   <li>Ingrese su codigo postal para validar su delivery</li>
@@ -165,7 +174,7 @@
                 <p class="cart__top-descuento">-40%</p>
                 <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart heart"></i>
                 </span>
               </div>
               <img
@@ -185,7 +194,7 @@
                 <p class="cart__top-descuento">-40%</p>
                 <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart heart"></i>
                 </span>
               </div>
               <img
@@ -202,7 +211,7 @@
                 <p class="cart__top-descuento">-40%</p>
                 <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart heart"></i>
                 </span>
               </div>
               <img
@@ -219,7 +228,7 @@
                 <p class="cart__top-descuento">-40%</p>
                 <span class="cart__top-buttons">
                   <i class="fa-regular fa-eye"></i>
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart heart"></i>
                 </span>
               </div>
               <img
@@ -235,14 +244,14 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="foo-contain">
       <div class="footer-container">
         <div class="foo-section">
           <div class="foo-brand">
             <span class="foo-name-brand">Exclusive</span>
           </div>
           <div>
-            <a href="" class="foo-subtitle">Nosotros</a>
+            <a href="" class="foo-subtitle foo-subtitle-mobile">About Us</a>
           </div>
           <div>
             <label for="mail" class="foo-subtitle">Newsletter</label>
@@ -253,85 +262,96 @@
                 id="mail"
                 value="default@example.com"
               />
-              <button type="submit">Subscribete</button>
+              <button type="submit">Subscribe</button>
             </div>
           </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
           <div class="foo-title">
-            <span>Contáctanos</span>
+            <span>Support</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div class="foo-contact foo-subtitle">
-            <span>Calle 0000,Ciudad</span>
-            <span>CP 0000, Pais</span>
+          <div class="foo-subtitle">
+            <span>Street 0000,City</span>
+            <span>Zip 0000, Country</span>
             <span>exclusive@mail.com</span>
             <span>9+54 000 0000000 </span>
           </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
           <div class="foo-title">
-            <span>Cuenta</span>
+            <span>Account</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="foo-subtitle">
-            <a href="">Mi cuenta</a>
-            <a href="">Logueate/Registrate</a>
-            <a href="">Carrito</a>
-            <a href="">Lista de deseos</a>
+            <a href="">My Account</a>
+            <a href="">Login/Register</a>
+            <a href="">Cart</a>
+            <a href="">Wishlist</a>
             <a href="">Shop</a>
           </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
           <div class="foo-title">
-            <span>Legales</span>
+            <span>Quick Link</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="foo-subtitle">
-            <a href="">Políticas Privadas</a>
-            <a href="">Términos de Uso</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
             <a href="">FAQ</a>
-            <a href="">Contacto</a>
+            <a href="">Contact</a>
           </div>
         </div>
-        <div class="foo-section">
+        <div class="foo-section section-mobile">
           <div class="foo-title">
             <span>Download App</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div id="foo-comments">
-            <span>Ahórrate $3000 con la nueva App</span>
-          </div>
-          <div class="foo-platform-digital">
-            <div>
+          <div class="content-media">
+            <div id="foo-comments">
+              <span>Save $3000 with App New User Only</span>
+            </div>
+            <div class="foo-platform-digital">
+              <div>
+                <a href="">
+                  <img
+                    src="../Assets/Img/footer/img-QR-Code.png"
+                    alt="QR Code"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img
+                    class="foo-platform-digital-img"
+                    src="../Assets/Img/footer/img-Google-Play.png"
+                    alt=""
+                  />
+                </a>
+                <a href="">
+                  <img
+                    class="foo-platform-digital-img"
+                    src="../Assets/Img/footer/img-App-Store.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="foo-social-media">
               <a href="">
-                <img src="../Assets/Img/footer/img-QR-Code.png" alt="QR Code" />
+                <i class="fa-brands fa-facebook-f fa-xl"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in fa-xl"></i>
               </a>
             </div>
-            <div>
-              <a href="">
-                <img
-                  src="../Assets/Img/footer/img-Google-Play.png"
-                  alt="Google Play link"
-                />
-              </a>
-              <a href="">
-                <img
-                  src="../Assets/Img/footer/img-App-Store.png"
-                  alt="App Store link"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="foo-social-media">
-            <a href="">
-              <i class="fa-brands fa-facebook-f fa-xl"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-twitter fa-xl"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-instagram fa-xl"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-linkedin-in fa-xl"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -339,5 +359,7 @@
         <span>&copy; Copyright 2024. All right reserved</span>
       </div>
     </footer>
+
+    <script src="../Js/index.js"></script>
   </body>
 </html>
