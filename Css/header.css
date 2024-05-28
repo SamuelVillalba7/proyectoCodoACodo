@@ -150,6 +150,7 @@ a{
   color: var(--color-text);
   gap: 2rem;
 }
+
 .cart-icon{
   position:relative;
   bottom: 0.2rem;
